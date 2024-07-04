@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,6 +26,31 @@
 
 .App-link {
   color: #61dafb;
+}
+
+:root {
+  --background-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --purple: #AE47FF;
+}
+
+h1 {
+  font-size: calc(50px + 2vmin);
+  width: 500px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: calc(10px + 2vmin);
+  font-weight: 400;
+  width: 350px;
+  text-align: left;
+}
+
+.Purple {
+  color: var(--purple);
 }
 
 @keyframes App-logo-spin {
