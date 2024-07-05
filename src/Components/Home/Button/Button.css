@@ -1,0 +1,12 @@
+.Button {
+    border-radius: 10px;
+    border: 1px var(--text-color) solid;
+    background-color: var(--background-color);
+    width: 170px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
