@@ -1,0 +1,30 @@
+.PlusBackground {
+    background-size: cover;
+    background-image: url('../../../assets/images/backgrounds/plus.svg');
+    width: 55%;
+    height: 100%;
+    left:45%;
+    position: relative;
+}
+
+.ResultsTitle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    margin-top: 80px;
+}
+
+.GPAList {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    margin-top: 263px;
+    flex-direction: column;
+    gap: 5px;
+}

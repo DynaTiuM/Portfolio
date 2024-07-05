@@ -8,6 +8,7 @@ import Skills from "./components/Pages/Skills/Skills";
 import OtherSkills from "./components/Pages/OtherSkills/OtherSkills";
 import Projects from "./components/Pages/Projects/Projects";
 import Languages from "./components/Pages/Languages/Languages";
+import Results from "./components/Pages/Results/Results";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Projects />
         <Blank marginTopValue={80}/>
         <Languages />
+        <Blank marginTopValue={80}/>
+        <Results />
     </div>
   );
 }

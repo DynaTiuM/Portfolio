@@ -1,0 +1,47 @@
+.Bar {
+    background-color: var(--light-green);
+    position: relative;
+    width: 100%;
+    border-radius: 7px;
+    height: 54px;
+    overflow: hidden;
+    display: flex;
+}
+
+.ProgressBar {
+    background-color: var(--green);
+    border-radius: 7px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.GPAFlex {
+    display: flex;
+    flex-direction: row;
+    width: 66%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.GPAContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GPAValue {
+    padding-right: 20px;
+    padding-top: 6px;
+}
+
+.GPADate {
+    margin-top: 27px;
+    width: 240px;
+}

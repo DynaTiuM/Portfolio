@@ -9,6 +9,7 @@
 .GrayBackground {
     background-color: var(--gray-background);
     height: 680px;
+    z-index: -1;
 }
 
 

@@ -52,7 +52,7 @@ export default function Languages() {
     return <>
         <Subtitle subtitle={"Langues"}/>
         <div className = "LanguagesScroll">
-            <div style={{display: 'flex', gap: 40, justifyContent: 'center'}}>
+            <div style={{display: 'flex', gap: 40, justifyContent: 'center', height: 459}}>
                 {languages.map((card, index) => (
                     <Card
                         key={index}
