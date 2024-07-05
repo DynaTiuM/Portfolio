@@ -1,0 +1,19 @@
+.Titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.GrayBackground {
+    background-color: var(--gray-background);
+    height: 680px;
+}
+
+
+.Gradient {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--background-color));
+    height: 18vh;
+    position: relative;
+}

@@ -1,6 +1,6 @@
 
 import './Menu.css';
-import language from '../../assets/Images/anglais.png';
+import language from '../../assets/images/anglais.png';
 
 export default function Menu() {
     return <div className={"Menu"}>

@@ -1,0 +1,28 @@
+.Lines {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Line {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.Line3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+}

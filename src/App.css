@@ -32,6 +32,7 @@
   --background-color: rgb(255, 255, 255);
   --text-color: rgb(0, 0, 0);
   --purple: #AE47FF;
+  --gray-background: #FAF9FA;
 }
 
 h1 {
@@ -39,25 +40,38 @@ h1 {
   width: 500px;
   text-align: left;
   margin-bottom: 0;
+  font-family: 'Nexa-Bold', sans-serif;
 }
 
 h2 {
   margin-top: 0;
-  font-size: calc(10px + 2vmin);
-  font-weight: 400;
-  width: 350px;
+  font-size: calc(6px + 2vmin);
+  width: 370px;
   text-align: left;
 }
+
 
 .Purple {
   color: var(--purple);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: 'Nexa';
+  src: url('fonts/Nexa Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Nexa-Bold';
+  src: url('fonts/Nexa Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Nexa-Light';
+  src: url('fonts/Nexa Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Nexa-Heavy';
+  src: url('fonts/Nexa Heavy.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Nexa', sans-serif;
 }

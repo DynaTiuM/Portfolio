@@ -1,12 +1,13 @@
 import './Home.css';
-import Image from '../../assets/Images/raphael.png';
+import Image from '../../../assets/images/raphael.png';
 import Button from "./Button/Button";
+import Blank from "../../Blank/Blank";
 
 export default function Home() {
     return (
         <>
             <div className="Background"></div>
-            <div className="Blank">
+            <Blank marginTopValue={200}/>
                 <div className="Flex1">
                     <div className="Flex2">
                         <h1>Bienvenue sur mon <span className="Purple">portfolio</span></h1>
@@ -17,7 +18,6 @@ export default function Home() {
                     </div>
                     <img src={Image} alt="Raphaël PERRIN" width="20%" />
                 </div>
-            </div>
         </>
     );
 }
