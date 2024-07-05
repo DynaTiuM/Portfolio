@@ -1,0 +1,33 @@
+.ProjectsBackground {
+    background-size: cover;
+    background-image: url('../../../assets/images/backgrounds/points.svg');
+    width: 100%;
+    height: 700px;
+    position: relative;
+    margin-top: -20px;
+    z-index: -1;
+}
+
+.Projects {
+    margin-top: 20px;
+    width: 75%;
+}
+
+.ProjectsContainer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.PurpleBackground {
+    background-color: var(--purple);
+    font-family: 'Nexa-Bold', sans-serif;
+    color: var(--background-color);
+    padding: 45px 0;
+}
+
+.ProjectsMoreText {
+    font-size: 30px;
+    margin: 0;
+}

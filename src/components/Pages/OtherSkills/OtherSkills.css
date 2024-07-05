@@ -1,0 +1,51 @@
+.GrayBackground2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-background);
+    height: 740px;
+    position: relative;
+}
+
+.Content {
+    margin-bottom: 530px;
+}
+
+.Glassmorphism {
+    padding: 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.86);
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+}
+
+.PurpleLines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    position: absolute;
+    width: 100%;
+    top: 40.5%;
+    left: 0;
+}
+
+.PurpleBackground1,
+.PurpleBackground2,
+.PurpleBackground3,
+.PurpleBackground4 {
+    background-color: var(--purple);
+    width: 100%;
+}
+
+.PurpleBackground1 { height: 45px; }
+.PurpleBackground2 { height: 27px; }
+.PurpleBackground3 { height: 17px; }
+.PurpleBackground4 { height: 7px; }

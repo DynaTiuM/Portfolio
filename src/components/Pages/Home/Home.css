@@ -1,5 +1,3 @@
-
-
 .Flex1 {
     display: flex;
     justify-content: center;
@@ -18,14 +16,13 @@
 
 .Background {
     background-size: cover;
-    background-image: url('../../../assets/images/points.svg');
+    background-image: url('../../../assets/images/backgrounds/points.svg');
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
     z-index: -1;
 }
-
 
 .ButtonContainer {
     margin-top: 3px;

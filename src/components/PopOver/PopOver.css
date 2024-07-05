@@ -1,0 +1,13 @@
+.PopOver {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #413045;
+    color: white;
+    padding: 5px 10px 2px 10px;
+    border-radius: 8px;
+    pointer-events: none;
+    white-space: nowrap;
+    margin-top: 5px;
+}
