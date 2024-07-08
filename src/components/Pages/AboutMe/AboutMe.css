@@ -1,0 +1,12 @@
+.Text {
+    max-width: 800px;
+    width: 70%;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.BoldText {
+    font-weight: bold;
+    color: var(--purple);
+}

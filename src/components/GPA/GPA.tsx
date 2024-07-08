@@ -11,7 +11,6 @@ export default function GPA({ date, value, index }: GPAProps) {
                     <div className="ProgressBar" style={{width: `${value}%`}}>
                         <h2 className="GPAValue" style={{textAlign: "right", margin: 0}}>{value}%</h2>
                     </div>
-                    {/* Add the dashed line */}
                 </div>
                 {index === 0 && (
                     <>

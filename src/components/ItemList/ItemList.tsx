@@ -5,7 +5,7 @@ import {handleHover, handleHoverExit} from "../../services/handleHover";
 
 interface Item {
     src: string,
-    alt: string
+    name: string
 }
 
 interface ItemListProps {
@@ -22,12 +22,12 @@ export default function ItemList({items}: ItemListProps) {
                     <div key={index} style={{ position: 'relative', display: 'inline-block' }}>
                         <img
                             src={language.src}
-                            alt={language.alt}
+                            alt={language.name}
                             style={{ height: '90px', width: 'auto', marginBottom: '10px', transition: 'transform 0.2s ease-in-out' }}
-                            onMouseOver={(e) => handleHover(e, language.alt, setPopOver)}
+                            onMouseOver={(e) => handleHover(e, language.name, setPopOver)}
                             onMouseOut={(e) => handleHoverExit(e, setPopOver)}
                         />
-                        {popOver.visible && popOver.text === language.alt && (
+                        {popOver.visible && popOver.text === language.name && (
                             <PopOver text={popOver.text}></PopOver>
                         )}
                     </div>

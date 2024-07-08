@@ -3,6 +3,7 @@ import Subtitle from "../../Subtitle/Subtitle";
 import './Results.css';
 import GPA from "../../GPA/GPA";
 import { GPAProps } from "../../../models/GPA";
+import GPAButton from "../../GPAButton/GPAButton";
 
 const gpas: GPAProps[] = [
     { date: 'Automne 2022', value: 80, index: 0 },
@@ -20,6 +21,9 @@ export default function Results() {
                 {gpas.map((gpa: GPAProps, index: number) => (
                     <GPA key={index} date={gpa.date} value={gpa.value} index={gpa.index} />
                 ))}
+            </div>
+            <div className={"GPAButtonContainer"}>
+                <GPAButton text={"Plus d'informations   ▸"} />
             </div>
             <div className="PlusBackground"></div>
         </div>

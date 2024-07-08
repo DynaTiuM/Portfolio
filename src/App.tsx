@@ -9,26 +9,31 @@ import OtherSkills from "./components/Pages/OtherSkills/OtherSkills";
 import Projects from "./components/Pages/Projects/Projects";
 import Languages from "./components/Pages/Languages/Languages";
 import Results from "./components/Pages/Results/Results";
+import AboutMe from "./components/Pages/AboutMe/AboutMe";
+import Footer from "./components/Pages/Footer/Footer";
 
 function App() {
-  return (
-    <div className="App">
-        <Menu/>
-        <Home/>
-        <Blank marginTopValue={130}/>
-        <ActualLearnings />
-        <Blank marginTopValue={80}/>
-        <Skills />
-        <Blank marginTopValue={80}/>
-        <OtherSkills />
-        <Blank marginTopValue={80}/>
-        <Projects />
-        <Blank marginTopValue={80}/>
-        <Languages />
-        <Blank marginTopValue={80}/>
-        <Results />
-    </div>
-  );
+      return (
+      <div className="App">
+            <Menu/>
+            <Home/>
+            <Blank marginTopValue={130}/>
+            <ActualLearnings />
+            <Blank marginTopValue={100}/>
+            <Skills />
+            <Blank marginTopValue={100}/>
+            <OtherSkills />
+            <Blank marginTopValue={100}/>
+            <Projects />
+            <Blank marginTopValue={100}/>
+            <Languages />
+            <Blank marginTopValue={100}/>
+            <Results />
+            <Blank marginTopValue={100}/>
+            <AboutMe />
+            <Footer />
+      </div>
+      );
 }
 
 export default App;

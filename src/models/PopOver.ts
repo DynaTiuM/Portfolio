@@ -2,5 +2,8 @@ export interface PopOverProps {
     visible?: boolean,
     text: string,
     x?: number,
-    y?: number
+    y?: number,
+    min_width?: string,
+    max_width?: string,
+    top?: string
 }

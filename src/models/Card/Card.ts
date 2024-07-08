@@ -1,4 +1,4 @@
-export interface CardProps {
+export interface Language {
     language_name: string;
     description: string;
     image: string;
