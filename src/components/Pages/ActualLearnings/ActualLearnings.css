@@ -8,10 +8,29 @@
 
 .GrayBackground {
     background-color: var(--gray-background);
-    height: 680px;
+    height: 690px;
     z-index: -1;
 }
 
+
+@media (max-width: 1200px) {
+    .GrayBackground {
+        height: 587px;
+    }
+}
+
+@media (max-width: 992px) {
+    .GrayBackground {
+        height: 514px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .GrayBackground {
+        height: 434px;
+    }
+}
 
 .Gradient {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--background-color));

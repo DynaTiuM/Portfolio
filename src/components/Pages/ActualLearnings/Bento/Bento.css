@@ -26,3 +26,118 @@
     display: flex;
     justify-content: center;
 }
+.Line img, .Line3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.VR {
+    max-height: 235px;
+}
+
+.UI {
+    max-height: 224px;
+}
+
+.Blender {
+    max-height: 191px;
+}
+
+.Moteurs {
+    max-height: 217px;
+}
+
+.Pose {
+    max-height: 191px;
+}
+
+.OpenGL {
+    max-height: 191px;
+}
+
+@media (max-width: 1200px) {
+    .VR {
+        max-height: 200px;
+    }
+    .UI {
+        max-height: 191px;
+    }
+    .Blender {
+        max-height: 163px;
+    }
+    .Moteurs {
+        max-height: 185px;
+    }
+    .Pose {
+        max-height: 163px;
+    }
+    .OpenGL {
+        max-height: 163px;
+    }
+
+    .Line {
+        gap: 26px;
+    }
+    .Line3 {
+        margin-top: 26px;
+        gap: 26px;
+    }
+}
+
+@media (max-width: 992px) {
+    .VR {
+        max-height: 175px;
+    }
+    .UI {
+        max-height: 167px;
+    }
+    .Blender {
+        max-height: 142px;
+    }
+    .Moteurs {
+        max-height: 162px;
+    }
+    .Pose {
+        max-height: 142px;
+    }
+    .OpenGL {
+        max-height: 142px;
+    }
+
+    .Line {
+        gap: 22px;
+    }
+    .Line3 {
+        margin-top: 22px;
+        gap: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .VR {
+        max-height: 150px;
+    }
+    .UI {
+        max-height: 143px;
+    }
+    .Blender {
+        max-height: 122px;
+    }
+    .Moteurs {
+        max-height: 139px;
+    }
+    .Pose {
+        max-height: 122px;
+    }
+    .OpenGL {
+        max-height: 122px;
+    }
+
+    .Line {
+        gap: 19px;
+    }
+    .Line3 {
+        margin-top: 19px;
+        gap: 19px;
+    }
+}

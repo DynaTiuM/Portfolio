@@ -11,6 +11,7 @@ import Languages from "./components/Pages/Languages/Languages";
 import Results from "./components/Pages/Results/Results";
 import AboutMe from "./components/Pages/AboutMe/AboutMe";
 import Footer from "./components/Pages/Footer/Footer";
+import Contact from "./components/Pages/Contact/Contact";
 
 function App() {
       return (
@@ -31,6 +32,8 @@ function App() {
             <Results />
             <Blank marginTopValue={100}/>
             <AboutMe />
+            <Blank marginTopValue={100}/>
+            <Contact />
             <Footer />
       </div>
       );

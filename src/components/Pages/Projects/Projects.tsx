@@ -57,7 +57,7 @@ export default function Projects() {
         <div className="ProjectsBackground"></div>
         <div className={"PurpleBackground"}>
             <div className={"FlexColumn"} style = {{gap: '17px'}}>
-                <p className={"ProjectsMoreText"}>Intégralité de mes réalisations du mon profil Github</p>
+                <p className={"ProjectsMoreText"}>Intégralité de mes réalisations sur mon profil Github</p>
                 <GithubButton text={"Github Raphaël PERRIN   ▸"}/>
             </div>
         </div>
