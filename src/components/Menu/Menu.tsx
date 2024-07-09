@@ -1,15 +1,62 @@
+import React, {useEffect, useState} from 'react';
 import './Menu.css';
-import language from '../../assets/images/anglais.png';
-import {scrollToSection} from "../../services/scroll";
+import Language from '../../assets/images/anglais.png';
+import { scrollToSection } from "../../services/scroll";
+import MenuIcon from '../../assets/images/menu.png';
+
+function useWindowSize() {
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+    });
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+            });
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return windowSize;
+}
 
 export default function Menu() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { width } = useWindowSize();
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
-        <div className="Menu">
-            <p className={"Tab"} onClick={() => scrollToSection('home', -200)}>Accueil</p>
-            <p className={"Tab"} onClick={() => scrollToSection('actualLearnings', 0)}>Portfolio</p>
-            <p className={"Tab"} onClick={() => scrollToSection('aboutMe', -150)}>A propos de moi</p>
-            <p className={"Tab"} onClick={() => scrollToSection('contact', 0)}>Contact</p>
-            <img src={language} alt="language" width="2.5%" />
+        <div className={`Menu ${isMenuOpen ? '' : 'retracted'}`}>
+            <button className="MenuButton" onClick={toggleMenu}>
+                <img src={MenuIcon} alt="Menu" width="40px" />
+            </button>
+            {(isMenuOpen || width > 768) &&  (
+                <>
+                    <p className="Tab" onClick={() => {
+                        scrollToSection('home', -200);
+                        toggleMenu(); // Ferme le menu après le clic
+                    }}>Accueil</p>
+                    <p className="Tab" onClick={() => {
+                        scrollToSection('actualLearnings', 0);
+                        toggleMenu(); // Ferme le menu après le clic
+                    }}>Portfolio</p>
+                    <p className="Tab" onClick={() => {
+                        scrollToSection('aboutMe', -150);
+                        toggleMenu(); // Ferme le menu après le clic
+                    }}>A propos de moi</p>
+                    <p className="Tab" onClick={() => {
+                        scrollToSection('contact', 0);
+                        toggleMenu(); // Ferme le menu après le clic
+                    }}>Contact</p>
+                    <img src={Language} alt="language" height="40px" />
+                </>
+            )}
         </div>
     );
 }

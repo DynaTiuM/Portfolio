@@ -3,28 +3,79 @@
     color: var(--text-color);
     display: flex;
     gap: 65px;
-    font-size: 18px;
     position: fixed;
     top: 0;
     z-index: 10;
-
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
+
+    transition: height 0.3s ease-in-out;
 }
+
+.Menu.retracted {
+    height: 60px;
+    overflow: hidden;
+}
+
+.MenuButton {
+    display: none;
+}
+
 
 .Tab {
     margin-top: 22px;
     cursor: pointer;
+    transition: color 0.2s ease-in-out;
 }
 
 .Tab:hover {
     color: var(--purple);
-    transition: 0.2s ease-in-out;
 }
 
 .Tab:not(:hover) {
-    scale: 1;
-    transition: 0.2s ease-in-out;
+    transition: scale 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .Menu {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        height: auto;
+    }
+    .Menu.retracted {
+        height: 40px;
+    }
+    .Tab {
+        margin-top: 10px;
+    }
+    .Tab:hover {
+        scale: 1.05;
+    }
+    .MenuButton {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: none;
+        border: none;
+        outline: none;
+        z-index: 11;
+    }
+}
+
+@media (max-width: 480px) {
+    .Menu {
+        gap: 15px;
+    }
+    .Tab {
+        font-size: clamp(14px, 1.3vw, 22px);
+    }
+    img {
+        width: 5%;
+    }
 }

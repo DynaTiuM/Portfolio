@@ -21,7 +21,7 @@ export default function AboutMe() {
 
         <Blank marginTopValue={60} />
         <LogoConception />
-        <Blank marginTopValue={100} />
+        <Blank marginTopValue={140} />
         <StickerSweatConception />
     </div>
 }

@@ -8,7 +8,7 @@ export default function Languages() {
     return <>
         <Subtitle subtitle={"Langues"}/>
         <div className = "LanguagesScroll">
-            <div style={{display: 'flex', gap: 40, justifyContent: 'center', height: 480}}>
+            <div style={{display: 'flex', gap: 40, justifyContent: 'center', height: 510}}>
                 {getLanguages().map((card, index) => (
                     <Card
                         key={index}

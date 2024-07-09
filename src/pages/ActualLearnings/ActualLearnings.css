@@ -31,9 +31,3 @@
         height: 434px;
     }
 }
-
-.Gradient {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--background-color));
-    height: 18vh;
-    position: relative;
-}

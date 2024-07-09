@@ -42,7 +42,8 @@ export default function Projects() {
                             src={project.src}
                             alt={project.alt}
                             style={{
-                                height: '300px',
+                                minHeight: 300,
+                                height: '20vw',
                                 width: 'auto',
                                 marginBottom: '10px',
                                 transition: 'transform 0.25s ease-in-out'

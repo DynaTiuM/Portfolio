@@ -20,7 +20,7 @@ export default function LogoComponent(logo: Logo) {
             <PopOver text={popOver.text}
                      min_width={"200px"}
                      max_width={"300px"}
-                     top={"55%"} />
+                     top={"35%"} />
         )}
     </div>
 }

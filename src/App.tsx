@@ -18,7 +18,7 @@ function App() {
           <div className="App">
                 <Menu />
                 <div id="home"><Home /></div>
-                <Blank marginTopValue={130} />
+                <Blank marginTopValue={200} />
                 <div id="actualLearnings"><ActualLearnings /></div>
                 <Blank marginTopValue={100} />
                 <div id="skills"><Skills /></div>

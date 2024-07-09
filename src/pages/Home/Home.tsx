@@ -18,6 +18,8 @@ export default function Home() {
                 </div>
                 <img src={Image} alt="Raphaël PERRIN" className="ProfileImage"/>
             </div>
+
+            <div className={"Gradient"}/>
         </>
     );
 }

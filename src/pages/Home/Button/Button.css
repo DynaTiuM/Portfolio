@@ -1,12 +1,23 @@
 .Button {
     border-radius: 10px;
+    font-size: clamp(16px, 1.1vw, 20px);
     border: 1px var(--text-color) solid;
     background-color: var(--background-color);
-    width: 170px;
+    width: 13vw;
+    min-width: 205px;
     height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+    padding: 23px;
+}
+
+.Button:hover {
+    border: 1px var(--purple) solid;
+    color: var(--purple);
+    scale: 1.05;
 }
