@@ -40,6 +40,11 @@
 }
 
 .ProjectsMoreText {
-    font-size: 30px;
+    font-size: clamp(18px, 3vw, 30px)!important;
     margin: 0;
+}
+
+.Href {
+    text-decoration: none;
+    color: inherit;
 }

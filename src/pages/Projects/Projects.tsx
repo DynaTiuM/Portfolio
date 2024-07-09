@@ -58,7 +58,9 @@ export default function Projects() {
         <div className={"PurpleBackground"}>
             <div className={"FlexColumn"} style = {{gap: '17px'}}>
                 <p className={"ProjectsMoreText"}>Intégralité de mes réalisations sur mon profil Github</p>
-                <GithubButton text={"Github Raphaël PERRIN   ▸"}/>
+                <a className={"Href"} href={"https://github.com/DynaTiuM"} target="_blank" rel="noopener noreferrer">
+                    <GithubButton text={"Github Raphaël PERRIN   ▸"}/>
+                </a>
             </div>
         </div>
 
