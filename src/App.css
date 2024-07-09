@@ -39,7 +39,7 @@
 }
 
 h1 {
-  font-size: calc(50px + 2vmin);
+  font-size: clamp(30px, 4.42vw, 100px);
   width: 500px;
   text-align: left;
   margin-bottom: 0;
@@ -48,7 +48,7 @@ h1 {
 
 h2 {
   margin-top: 0;
-  font-size: calc(6px + 2vmin);
+  font-size: clamp(16px, 1.43vw, 40px);
   width: 370px;
   text-align: left;
 }

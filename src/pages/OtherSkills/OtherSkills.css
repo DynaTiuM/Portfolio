@@ -3,12 +3,38 @@
     justify-content: center;
     align-items: center;
     background-color: var(--gray-background);
-    height: 740px;
+    height: 800px;
     position: relative;
 }
 
 .Content {
-    margin-bottom: 530px;
+    margin-bottom: calc(480px + 12vh);
+}
+
+@media (max-width: 1470px) {
+    .Content {
+        margin-bottom: 500px;
+    }
+    .GrayBackground2 {
+        height: 700px;
+    }
+}
+@media (max-width: 900px) {
+    .Content {
+        margin-bottom: 600px;
+    }
+    .GrayBackground2 {
+        height: 800px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Content {
+        margin-bottom: 900px;
+    }
+    .GrayBackground2 {
+        height: 1100px;
+    }
 }
 
 .Glassmorphism {

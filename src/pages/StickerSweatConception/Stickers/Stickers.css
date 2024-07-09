@@ -1,7 +1,14 @@
 .StickerImg {
     width: 25vw;
-    min-width: 250px;
+    min-width: 200px;
     max-width: 700px;
+}
+
+.StickersFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -18,6 +25,9 @@
     .StickersText {
         max-width: 1000px!important;
         width: 80%;
+    }
+    .StickersFlex {
+        flex-direction: row;
     }
 }
 

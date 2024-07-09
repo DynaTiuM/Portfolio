@@ -5,5 +5,6 @@ export interface PopOverProps {
     y?: number,
     min_width?: string,
     max_width?: string,
-    top?: string
+    top?: string,
+    is_white?: boolean
 }

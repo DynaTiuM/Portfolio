@@ -1,6 +1,6 @@
 import React from "react";
 
-export const handleHover = (event: React.MouseEvent<HTMLImageElement, MouseEvent>, text: string, setPopOver: any) => {
+export const handleHover = (event: React.MouseEvent<HTMLImageElement | HTMLDivElement, MouseEvent>, text: string, setPopOver: any) => {
     const rect = event.currentTarget.getBoundingClientRect();
     setPopOver({
         visible: true,
@@ -11,7 +11,7 @@ export const handleHover = (event: React.MouseEvent<HTMLImageElement, MouseEvent
     event.currentTarget.style.transform = 'scale(1.15)';
 };
 
-export const handleHoverExit = (event: React.MouseEvent<HTMLImageElement, MouseEvent>, setPopOver: any) => {
+export const handleHoverExit = (event: React.MouseEvent<HTMLImageElement | HTMLDivElement, MouseEvent>, setPopOver: any) => {
     setPopOver({ visible: false, text: '', x: 0, y: 0 });
     event.currentTarget.style.transform = 'scale(1)';
 };

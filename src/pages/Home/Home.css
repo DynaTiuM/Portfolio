@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 70px;
+    gap: 5vw;
     width: 100%;
 }
 
@@ -26,4 +26,39 @@
 
 .ButtonContainer {
     margin-top: 3px;
+}
+
+.ProfileImage {
+    max-width: 20%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .Flex1 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .Flex2 {
+        text-align: center;
+    }
+
+    .ProfileImage {
+        max-width: 40%;
+        min-width: 200px;
+    }
+
+    .ButtonContainer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
 }

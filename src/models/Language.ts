@@ -4,4 +4,5 @@ export interface Language {
     image: string;
     size_y : number;
     size_x: number;
+    plus_description?: string
 }

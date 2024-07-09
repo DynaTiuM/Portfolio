@@ -1,0 +1,55 @@
+.PlusContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--background-color);
+    border: 1px solid var(--background-color);
+    text-align: right;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.Plus {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+
+    filter: brightness(100%);
+}
+
+.PlusContainer:hover .Plus {
+    transform: rotate(90deg) scale(1.1) !important;
+    filter: brightness(0%);
+}
+
+.PlusContainer:hover {
+    transform: scale(1.1);
+    transition: transform 0.4s ease-in-out;
+}
+.PlusContainer:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+}
+
+.PlusContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    transform-origin: center;
+    transform: scale(0);
+    transition: transform 0.4s ease-in-out;
+    border-radius: 100px;
+}
+
+.PlusContainer:hover::before {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1);
+}
