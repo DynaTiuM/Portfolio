@@ -34,7 +34,7 @@ export default function Menu() {
     return (
         <div className={`Menu ${isMenuOpen ? '' : 'retracted'}`}>
             <button className="MenuButton" onClick={toggleMenu}>
-                <img src={MenuIcon} alt="Menu" width="40px" />
+                <img src={MenuIcon} alt="Menu" width="30px" />
             </button>
             {(isMenuOpen || width > 768) &&  (
                 <>

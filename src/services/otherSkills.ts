@@ -11,6 +11,8 @@ import UE from "../assets/images/other-skills/unreal-engine.png";
 import Blender from "../assets/images/other-skills/blender.png";
 import Office from "../assets/images/other-skills/office.png";
 import Latex from "../assets/images/other-skills/latex.png";
+import VegasPro from "../assets/images/other-skills/vegas.png";
+
 import {OtherSkill} from "../models/OtherSkill";
 
 export const getOtherSkills = (): OtherSkill[] => {
@@ -27,6 +29,7 @@ export const getOtherSkills = (): OtherSkill[] => {
         { src: UE, name: 'Unreal Engine' },
         { src: Blender, name: 'Blender' },
         { src: Office, name: 'Office' },
-        { src: Latex, name: 'Latex' }
+        { src: Latex, name: 'Latex' },
+        { src: VegasPro, name: 'VEGAS Pro' }
     ]
 }

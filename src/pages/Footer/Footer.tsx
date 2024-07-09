@@ -3,6 +3,6 @@ import './Footer.css'
 export default function Footer() {
     return <div className={"FooterBackground"}>
         <p className={"Rights"}>© Raphael PERRIN - Tous droits réservés.</p>
-        <p className={"FooterText"}>Site web réalisé en React</p>
+        <p className={"FooterText"}>Site web réalisé en React de A à Z par mes soins.</p>
     </div>
 }
