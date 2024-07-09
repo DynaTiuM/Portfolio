@@ -1,0 +1,10 @@
+.StickerSweatFlex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+    gap: 60px;
+}

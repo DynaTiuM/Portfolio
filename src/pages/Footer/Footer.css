@@ -1,0 +1,16 @@
+.Rights {
+    font-family: 'Nexa-Bold', sans-serif;
+    color: var(--background-color);
+    margin: 0;
+}
+
+.FooterText {
+    margin-top: 40px;
+    color: var(--background-color);
+}
+
+.FooterBackground {
+    margin: 0;
+    background-color: var(--dark-purple);
+    padding: 50px 0;
+}
