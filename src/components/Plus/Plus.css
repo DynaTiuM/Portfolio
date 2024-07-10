@@ -19,6 +19,7 @@
     transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
 
     filter: brightness(100%);
+    cursor: pointer;
 }
 
 .PlusContainer:hover .Plus {

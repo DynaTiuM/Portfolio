@@ -48,3 +48,58 @@
     text-decoration: none;
     color: inherit;
 }
+
+.Project {
+    position: relative;
+    margin-bottom: 10px;
+    width: auto;
+    height: 20vw;
+    min-height: 300px;
+    transition: transform 0.25s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Project::before {
+    content: '';
+    position: absolute;
+    border-radius: 16px;
+    top: 0;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.25s ease-in-out;
+    pointer-events: none;
+}
+
+.Project::after {
+    content: '';
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    background-image: url('../../assets/images/plus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+    pointer-events: none;
+}
+
+.Project:hover::after {
+    opacity: 1;
+}
+.Project:hover::before {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.Project:hover {
+    transform: scale(1.05);
+}
+
+.Project:not(:hover) {
+    transform: scale(1);
+}
