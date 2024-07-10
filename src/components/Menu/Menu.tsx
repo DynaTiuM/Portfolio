@@ -40,19 +40,19 @@ export default function Menu() {
                 <>
                     <p className="Tab" onClick={() => {
                         scrollToSection('home', -200);
-                        toggleMenu(); // Ferme le menu après le clic
+                        toggleMenu();
                     }}>Accueil</p>
                     <p className="Tab" onClick={() => {
                         scrollToSection('actualLearnings', 0);
-                        toggleMenu(); // Ferme le menu après le clic
+                        toggleMenu();
                     }}>Portfolio</p>
                     <p className="Tab" onClick={() => {
                         scrollToSection('aboutMe', -150);
-                        toggleMenu(); // Ferme le menu après le clic
+                        toggleMenu();
                     }}>A propos de moi</p>
                     <p className="Tab" onClick={() => {
                         scrollToSection('contact', 0);
-                        toggleMenu(); // Ferme le menu après le clic
+                        toggleMenu();
                     }}>Contact</p>
                     <img src={Language} alt="language" height="40px" />
                 </>

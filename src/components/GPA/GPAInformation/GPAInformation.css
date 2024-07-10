@@ -1,0 +1,79 @@
+.GPAInformationOverlay {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.GPAInformationContainer {
+    background-color: var(--popup-background);
+    width: 80%;
+    min-height: 80%;
+    overflow: hidden;
+    backdrop-filter: blur(40px);
+    border-radius: 25px 25px 0 25px;
+}
+
+.GPAInformationTabs {
+    display: flex;
+    cursor: pointer;
+    background-color: var(--background-color);
+    border-radius: 25px 25px 0 0;
+}
+
+.GPAInformationTab.firstTab {
+    border-right: 1px solid var(--tab-border);
+}
+.GPAInformationTab.lastTab {
+    border-left: 1px solid var(--tab-border);
+}
+
+.GPAInformationTab.between {
+    border-right: 1px solid var(--tab-border);
+    border-left: 1px solid var(--tab-border);
+}
+
+.GPAInformationTab {
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+
+}
+
+.GPAInformationTab.active {
+    border-bottom: 3px solid var(--purple);
+    font-family: 'Nexa-Bold', sans-serif;
+    color: var(--purple);
+
+    background-color: var(--gray-background);
+}
+
+.GPAInformationTab.firstTab.active {
+    border-radius: 25px 0 0 0;
+}
+
+.GPAInformationTab.lastTab.active {
+    border-radius: 0 25px 0 0;
+}
+
+.Cross {
+    width: 30px;
+    height: 30px;
+
+    transition: 0.5s ease-in-out;
+}
+
+.Cross:hover {
+    transform: scale(1.2) rotate(180deg);
+}
+
+.CrossContainer {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}

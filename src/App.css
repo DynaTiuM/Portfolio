@@ -37,6 +37,13 @@
   --green: #97D075;
   --light-green: #E4E9E1;
   --dark-purple: #562DB5;
+  --overlay-background: rgba(19, 24, 32, 0.25);
+  --popup-background: rgba(255, 255, 255, 0.86);
+  --tab-border: #E1E1E1;
+
+  --c-letter: #BFE7A6;
+  --b-letter: #97D075;
+  --a-letter: #71BB44;
 }
 
 h1 {

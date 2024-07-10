@@ -1,0 +1,62 @@
+.UVTab {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 96%;
+}
+
+.UVTabContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.UVSections {
+    display: grid;
+    grid-template-columns: 2fr 15fr 1fr 3fr;
+    font-family: 'Nexa-Bold', sans-serif;
+    text-align: left;
+    gap: 10px;
+    padding: 15px 20px 0 20px;
+}
+
+.UVSectionsContainer {
+    width: 96%;
+}
+
+.GPABarContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 96%;
+    margin-bottom: 20px;
+}
+
+.GPAText {
+    font-family: 'Nexa-Bold', sans-serif;
+    margin-bottom: 4px;
+}
+
+.GPABar {
+    background-color: var(--background-color);
+    position: relative;
+    width: 60%;
+    border-radius: 14px;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.GPAProgressBar {
+    background-color: var(--green);
+    border-radius: 14px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

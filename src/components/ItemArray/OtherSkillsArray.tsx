@@ -8,7 +8,7 @@ import {getOtherSkills} from "../../services/otherSkills";
 export default function OtherSkillsArray() {
     const [popOver, setPopOver] = useState<PopOverProps>({ visible: false, text: '', x: 0, y: 0 });
 
-    const [numColumns, setNumColumns] = useState(5); // Nombre initial de colonnes
+    const [numColumns, setNumColumns] = useState(5);
 
     useEffect(() => {
         const handleResize = () => {

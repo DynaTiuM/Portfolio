@@ -1,5 +1,5 @@
 import React from 'react';
-import { GPAProps } from "../../models/GPA";
+import { GPAProps } from "../../../models/GPA";
 import './GPA.css';
 
 export default function GPA({ date, value, index }: GPAProps) {
