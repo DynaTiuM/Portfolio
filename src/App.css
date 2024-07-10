@@ -44,6 +44,14 @@
   --c-letter: #BFE7A6;
   --b-letter: #97D075;
   --a-letter: #71BB44;
+
+  --Java: #b03838;
+  --Python: #3dabab;
+  --PHP: #9238b0;
+  --JS: #f5d01d;
+  --CSS: #b03878;
+  --CPP: #4d579b;
+  --CS: #348f75;
 }
 
 h1 {
@@ -92,7 +100,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .FlexRow {
   display: flex;

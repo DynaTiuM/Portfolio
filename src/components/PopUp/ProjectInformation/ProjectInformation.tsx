@@ -1,7 +1,7 @@
 import './../PopUp.css';
-import {handleClickOutside, managePopUpScroll} from "../../../services/popUp";
-import React, {Dispatch, SetStateAction, useEffect, useRef} from "react";
-import {getProjectInformation} from "../../../services/projectInformation";
+import { handleClickOutside, managePopUpScroll } from "../../../services/popUp";
+import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
+import { getProjectInformation } from "../../../services/projectInformation";
 
 import './ProjectInformation.css';
 import Cross from "../Cross/Cross";
@@ -11,11 +11,10 @@ interface ProjectInformationProps {
     setProjectInformation: Dispatch<SetStateAction<boolean>>
 }
 
-export default function ProjectInformation({index, setProjectInformation}: ProjectInformationProps) {
+export default function ProjectInformation({ index, setProjectInformation }: ProjectInformationProps) {
 
     const overlayRef = useRef<HTMLDivElement>(null);
     const projectInformation = getProjectInformation(index);
-
 
     useEffect(() => {
         managePopUpScroll(overlayRef);
@@ -26,7 +25,7 @@ export default function ProjectInformation({index, setProjectInformation}: Proje
         };
     }, [projectInformation]);
 
-    if(!projectInformation){
+    if (!projectInformation) {
         return <></>;
     }
 
@@ -53,9 +52,24 @@ export default function ProjectInformation({index, setProjectInformation}: Proje
                         </div>
 
                         {projectInformation.big_image &&
-                            <div>
-                                <img className={"ProjectImage"} src={projectInformation.big_image}
-                                     alt={projectInformation.project.name}/>
+                            <div className={"FlexRow"}>
+                                <div className={"FlexColumn"} style={{ gap: 20, alignItems: 'center' }}>
+                                    <img className={"ProjectImage"} src={projectInformation.big_image}
+                                         alt={projectInformation.project.name} />
+                                    <div className={"TechnologiesContainer"}>
+                                        <div className={"TechnologiesTitle"}>Technologies</div>
+                                        <div className={"LanguagesContainer"}>
+                                            {
+                                                projectInformation.languages.map((language, idx) => (
+                                                    <div key={idx} className={"Language"}
+                                                         style={{ backgroundColor: `var(--${language})` }}>
+                                                        {language}
+                                                    </div>
+                                                ))
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         }
                     </div>

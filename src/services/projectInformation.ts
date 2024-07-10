@@ -40,9 +40,9 @@ const projectInformation: ProjectInformation[] = [
             "➜ Taguer des animaux sur un message, y ajouter une localisation et un type de message (événément, conseil, sauvetage)\n" +
             "➜ Adopter un animal grâce à un système de demande et notification\n" +
             "➜ Et encore plein d'autres fonctionnalités",
-        description: "Ce projet a représenté une opportunité exceptionnelle pour le développement de compétences dans divers domaines. Il a permis l'initiation à JavaScript et l'exploration de différentes API, notamment celles proposées par Google Cloud. En outre, de nouvelles compétences ont été acquises en envoyant des emails grâce à la bibliothèque PHPMailer et en utilisant les services de l'entreprise Sendinblue.",
+        description: "Ce projet a représenté une opportunité exceptionnelle pour le développement de compétences dans divers domaines. Il a permis l'initiation à JavaScript et l'exploration de différentes API, notamment celles proposées par Google Cloud.\n\n En outre, de nouvelles compétences ont été acquises en envoyant des emails grâce à la bibliothèque PHPMailer et en utilisant les services de l'entreprise Sendinblue.",
         languages: [
-            "Java"
+            "PHP", "CSS", "JS"
         ],
         big_image: Twitturtle
     },
