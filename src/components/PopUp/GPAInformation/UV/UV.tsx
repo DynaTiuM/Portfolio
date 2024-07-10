@@ -1,4 +1,4 @@
-import {UVProps} from "../../../models/UV";
+import {UVProps} from "../../../../models/UV";
 
 import './UV.css'
 

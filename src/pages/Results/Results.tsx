@@ -5,7 +5,7 @@ import GPA from "../../components/GPA/GPABar/GPA";
 import { GPAProps } from "../../models/GPA";
 import GPAButton from "../../components/GPA/GPAButton/GPAButton";
 import {getGPAS} from "../../services/gpas";
-import GPAInformation from "../../components/GPA/GPAInformation/GPAInformation";
+import GPAInformation from "../../components/PopUp/GPAInformation/GPAInformation";
 
 export default function Results() {
     const [gpaInformation, setGpaInformation] = useState<boolean>(false);

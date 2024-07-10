@@ -1,25 +1,14 @@
 import Subtitle from "../../components/Subtitle/Subtitle";
 import './Projects.css'
 
-import Azul from '../../assets/images/projects/azul.png';
-import Twitturtle from '../../assets/images/projects/twitturtle.png';
-import Tetris from '../../assets/images/projects/tetris.png';
-import Unity from '../../assets/images/projects/unity.png';
-import Pogo from '../../assets/images/projects/pogo.png';
-import Ludiq from '../../assets/images/projects/ludiq.png';
-import React from "react";
+import React, {useState} from "react";
 import GithubButton from "../../components/GithubButton/GithubButton";
-
-const projects = [
-    {src: Azul, alt: "Azul"},
-    {src: Twitturtle, alt: "Twitturtle"},
-    {src: Tetris, alt: "Tetris"},
-    {src: Unity, alt: "Unity"},
-    {src: Pogo, alt: "Pogo"},
-    {src: Ludiq, alt: "Ludiq"}
-]
+import {getProjects} from "../../services/projects";
+import ProjectInformation from "../../components/PopUp/ProjectInformation/ProjectInformation";
 
 export default function Projects() {
+    const [projectInformation, setProjectInformation] = useState<boolean>(false);
+    const [projectIndex, setProjectIndex] =useState(0);
 
     // @ts-ignore
     const handleHover = (event) => {
@@ -31,16 +20,22 @@ export default function Projects() {
         event.target.style.transform = 'scale(1)';
     };
 
+    // @ts-ignore
+    const handleClick = (index) => {
+        setProjectIndex(index);
+        setProjectInformation(true);
+    };
+
     return <>
         <Subtitle subtitle={"Projets"}/>
         <div className={"ProjectsContainer"}>
             <div className={"Projects"}>
                 <div style={{display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap'}}>
-                    {projects.map((project, index) => (
+                    {getProjects().map((project, index) => (
                         <img
                             key={index}
                             src={project.src}
-                            alt={project.alt}
+                            alt={project.name}
                             style={{
                                 minHeight: 300,
                                 height: '20vw',
@@ -50,6 +45,7 @@ export default function Projects() {
                             }}
                             onMouseOver={handleHover}
                             onMouseOut={handleHoverExit}
+                            onMouseDown={() => handleClick(project.id)}
                         />
                     ))}
                 </div>
@@ -64,6 +60,13 @@ export default function Projects() {
                 </a>
             </div>
         </div>
+        {
+            projectInformation && (
+                <div>
+                    <ProjectInformation index={projectIndex} setProjectInformation={setProjectInformation} />
+                </div>
+            )
+        }
 
     </>
 }

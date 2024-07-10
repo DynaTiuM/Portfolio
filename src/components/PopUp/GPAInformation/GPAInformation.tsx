@@ -1,10 +1,13 @@
 import React, {Dispatch, SetStateAction, useState, useEffect, useRef} from 'react';
 import './GPAInformation.css';
-import { getGpaInformation, getNumberOfSemesters } from "../../../services/gpainformation";
-import { GPAInformationProps } from "../../../models/GPAInformation";
-import UVTab from "../UVTab/UVTab";
+import './../PopUp.css';
 
-import Cross from '../../../assets/images/cross.png';
+import { getGpaInformation, getNumberOfSemesters } from "../../../services/gpaInformation";
+import { GPAInformationProps } from "../../../models/GPAInformation";
+import UVTab from "./UVTab/UVTab";
+
+import {managePopUpScroll, handleClickOutside} from "../../../services/popUp";
+import Cross from "../Cross/Cross";
 
 interface GPAInformationUseState {
     setGpaInformation: Dispatch<SetStateAction<boolean>>
@@ -16,44 +19,18 @@ export default function GPAInformation({setGpaInformation} : GPAInformationUseSt
     const [activeTab, setActiveTab] = useState(0);
     const overlayRef = useRef<HTMLDivElement>(null);
 
-    const closePopUp = () => {
-        setGpaInformation(false);
-    }
-
-    const handleClickOutside = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-        if (event.target === event.currentTarget) {
-            closePopUp();
-        }
-    };
-
-    const updateAlignment = () => {
-        const overlay = overlayRef.current;
-        if (overlay) {
-            const container = overlay.querySelector('.GPAInformationContainer') as HTMLElement;
-            if (container) {
-                if (container.scrollHeight > window.innerHeight) {
-                    overlay.style.alignItems = 'flex-start';
-                    container.style.marginTop = '50px';
-                    container.style.marginBottom = '50px';
-                } else {
-                    overlay.style.alignItems = 'center';
-                }
-            }
-        }
-    };
-
     useEffect(() => {
-        updateAlignment();
+        managePopUpScroll(overlayRef);
 
-        window.addEventListener('resize', updateAlignment);
+        window.addEventListener('resize', () => managePopUpScroll(overlayRef));
         return () => {
-            window.removeEventListener('resize', updateAlignment);
+            window.removeEventListener('resize', () => managePopUpScroll(overlayRef));
         };
     }, [gpaInformation]);
 
     return (
-        <div className="GPAInformationOverlay" onClick={handleClickOutside} ref={overlayRef}>
-            <div className="GPAInformationContainer">
+        <div className="InformationOverlay" onClick={(e) => handleClickOutside(e, setGpaInformation)} ref={overlayRef}>
+            <div className="InformationContainer">
                 <div className="GPAInformationTabs">
                     {
                         gpaInformation.map((gpaInformation: GPAInformationProps, index: number) => {
@@ -84,9 +61,7 @@ export default function GPAInformation({setGpaInformation} : GPAInformationUseSt
                     }
                 </div>
                 <UVTab gpaInformation={gpaInformation[activeTab]} />
-                <div className={"CrossContainer"} onClick={closePopUp}>
-                    <img src={Cross} alt='x' className={"Cross"} />
-                </div>
+                <Cross setState={setGpaInformation} />
             </div>
         </div>
     );

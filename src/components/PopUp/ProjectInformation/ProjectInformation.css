@@ -1,0 +1,30 @@
+.ProjectInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.ProjectTitle {
+    margin-bottom: 15px;
+}
+
+.ProjectSubtitle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: clamp(22px, 2vw, 28px);
+}
+
+.TextContainer {
+    text-align: left;
+}
+
+.ProjectImage {
+    width: 30vw;
+}
+
+.ProjectText {
+    max-width: 610px;
+}

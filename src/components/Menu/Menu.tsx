@@ -43,7 +43,7 @@ export default function Menu() {
                         toggleMenu();
                     }}>Accueil</p>
                     <p className="Tab" onClick={() => {
-                        scrollToSection('actualLearnings', 0);
+                        scrollToSection('actualLearnings', -150);
                         toggleMenu();
                     }}>Portfolio</p>
                     <p className="Tab" onClick={() => {

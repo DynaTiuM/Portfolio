@@ -2,9 +2,9 @@ import UV from "../UV/UV";
 
 import './UVTab.css'
 import React from "react";
-import {GPAInformationProps} from "../../../models/GPAInformation";
-import {UVProps} from "../../../models/UV";
-import Blank from "../../Blank/Blank";
+import {GPAInformationProps} from "../../../../models/GPAInformation";
+import {UVProps} from "../../../../models/UV";
+import Blank from "../../../Blank/Blank";
 
 interface UVTabProps {
     gpaInformation: GPAInformationProps;
