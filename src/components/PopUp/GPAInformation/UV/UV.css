@@ -10,9 +10,14 @@
     align-items: center;
 }
 
-.UVText {
+.UVText, .UVName {
     margin: 0;
     text-align: left;
+    font-size: clamp(14px, 1.3vw, 20px);
+}
+
+.UVName {
+    font-size: clamp(8px, 1.3vw, 20px);
 }
 
 .UVLetterContainer, .UVCreditContainer {
@@ -28,12 +33,13 @@
 
 .UVCreditContainer {
     border-radius: 14px;
+    min-width: 70px;
 }
 
 .UVLetterText, .UVCreditText, .UVText {
     margin: 0 0 -5px;
 }
 
-.UVLetterText {
-    font-family: 'Nexa-Bold', sans-serif;
+.UVCreditText {
+    font-size: clamp(12px, 1.3vw, 20px);
 }

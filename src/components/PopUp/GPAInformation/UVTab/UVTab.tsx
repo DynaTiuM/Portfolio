@@ -20,10 +20,10 @@ export default function UVTab({gpaInformation}: UVTabProps) {
             <div className={"UVTabContainer"}>
                 <div className={"UVSectionsContainer"}>
                     <div className={"UVSections"}>
-                        <p>{t('subject')}</p>
-                        <p>{t('description')}</p>
-                        <p>{t('mark')}</p>
-                        <p>{t('ECTS')}</p>
+                        <p className={"UVSection"}>{t('subject')}</p>
+                        <p className={"UVSection"}>{t('description')}</p>
+                        <p className={"UVSection"}>{t('mark')}</p>
+                        <p className={"UVSection"}>{t('ECTS')}</p>
                     </div>
                 </div>
                 <div className={"UVTab"}>

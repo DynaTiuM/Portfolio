@@ -19,7 +19,7 @@ export default function UV(uv: UVProps) {
 
     return (
         <div className={"UV"}>
-            <p className={"UVText"}>{uv.name}</p>
+            <p className={"UVName"}>{uv.name}</p>
             <p className={"UVText"}>{uv.description}</p>
             <div className={"UVLetterContainer"} style={{backgroundColor: letterBackground, width: 35, height: 35}}>
                 <p className={"UVLetterText"}>{uv.letter}</p>

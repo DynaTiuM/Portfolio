@@ -54,7 +54,7 @@ export default function GPAInformation({setGpaInformation} : GPAInformationUseSt
                                     style={{ width: `${(100 / numberOfSemesters)}%` }}
                                     onClick={() => setActiveTab(index)}
                                 >
-                                    <p>{gpaInformation.gpa.date}</p>
+                                    <p className={"UVSection"}>{gpaInformation.gpa.date}</p>
                                 </div>
                             );
                         })
