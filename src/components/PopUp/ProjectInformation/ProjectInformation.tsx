@@ -48,9 +48,9 @@ export default function ProjectInformation({ index, setProjectInformation }: Pro
                     <div className={"ProjectInformation"}>
                         <div className={"TextContainer"}>
                             <h3 className={"ProjectTitle"}>{projectInformation.project.name}</h3>
-                            <h4 className={"ProjectSubtitle"}>Introduction</h4>
+                            <h4 className={"ProjectSubtitle"}>{t('introduction')}</h4>
                             <p className={"ProjectText"}>{transformText(projectInformation.introduction)}</p>
-                            <h4 className={"ProjectSubtitle"}>Réalisation du projet</h4>
+                            <h4 className={"ProjectSubtitle"}>{t('project-realization')}</h4>
                             <p className={"ProjectText"}>{transformText(projectInformation.description)}</p>
                         </div>
 
