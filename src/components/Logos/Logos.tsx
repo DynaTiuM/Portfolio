@@ -3,10 +3,14 @@ import Logo from "./Logo/LogoComponent";
 
 import './Logos.css'
 import Blank from "../Blank/Blank";
+import {useTranslation} from "react-i18next";
 
 export default function Logos() {
+
+    const { t } = useTranslation();
+
     return <>
-        <p className={"Text"}>J'ai conçu plusieurs logos avec Adobe Illustrator pour divers clubs et projets étudiants de l'UTBM. Ces logos ont servi à promouvoir et représenter les clubs et projets concernés.</p>
+        <p className={"Text"}>{t('logo-conception-text')}</p>
         <Blank marginTopValue={40} />
         <div className={"FlexRow"}>
             <div className={"LogoContainer"}>

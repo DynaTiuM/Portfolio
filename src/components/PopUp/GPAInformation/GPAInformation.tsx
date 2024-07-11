@@ -2,7 +2,7 @@ import React, {Dispatch, SetStateAction, useState, useEffect, useRef} from 'reac
 import './GPAInformation.css';
 import './../PopUp.css';
 
-import { getGpaInformation, getNumberOfSemesters } from "../../../services/gpaInformation";
+import { useGpaInformation, useNumberOfSemesters } from "../../../services/gpaInformation";
 import { GPAInformationProps } from "../../../models/GPAInformation";
 import UVTab from "./UVTab/UVTab";
 
@@ -14,8 +14,8 @@ interface GPAInformationUseState {
 }
 
 export default function GPAInformation({setGpaInformation} : GPAInformationUseState) {
-    const numberOfSemesters = getNumberOfSemesters();
-    const gpaInformation = getGpaInformation();
+    const numberOfSemesters = useNumberOfSemesters();
+    const gpaInformation = useGpaInformation();
     const [activeTab, setActiveTab] = useState(0);
     const overlayRef = useRef<HTMLDivElement>(null);
 

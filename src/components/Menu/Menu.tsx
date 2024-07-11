@@ -4,6 +4,8 @@ import Language from '../../assets/images/anglais.png';
 import { scrollToSection } from "../../services/scroll";
 import MenuIcon from '../../assets/images/menu.png';
 
+import { useTranslation } from 'react-i18next';
+
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
         width: window.innerWidth,
@@ -27,6 +29,13 @@ export default function Menu() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { width } = useWindowSize();
 
+    const { i18n } = useTranslation();
+    const { t } = useTranslation();
+
+    const changeLanguage = (lng: string) => {
+        i18n.changeLanguage(lng);
+    };
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -40,21 +49,21 @@ export default function Menu() {
                 <>
                     <p className="Tab" onClick={() => {
                         scrollToSection('home', -200);
-                        toggleMenu();
-                    }}>Accueil</p>
+                        if(width <= 768) toggleMenu();
+                    }}>{t('home')}</p>
                     <p className="Tab" onClick={() => {
                         scrollToSection('actualLearnings', -150);
-                        toggleMenu();
-                    }}>Portfolio</p>
+                        if(width <= 768) toggleMenu();
+                    }}>{t('portfolio')}</p>
                     <p className="Tab" onClick={() => {
                         scrollToSection('aboutMe', -150);
-                        toggleMenu();
-                    }}>A propos de moi</p>
+                        if(width <= 768) toggleMenu();
+                    }}>{t('about-me')}</p>
                     <p className="Tab" onClick={() => {
                         scrollToSection('contact', 0);
-                        toggleMenu();
-                    }}>Contact</p>
-                    <img src={Language} alt="language" height="40px" />
+                        if(width <= 768) toggleMenu();
+                    }}>{t('contact')}</p>
+                    <img onClick={() => changeLanguage('en')} src={Language} alt="language" height="40px" />
                 </>
             )}
         </div>

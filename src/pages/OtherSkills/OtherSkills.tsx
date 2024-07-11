@@ -1,12 +1,16 @@
 import Subtitle from "../../components/Subtitle/Subtitle";
 import './OtherSkills.css'
 import OtherSkillsArray from "../../components/ItemArray/OtherSkillsArray";
+import {useTranslation} from "react-i18next";
 
 export default function OtherSkills() {
+
+    const { t } = useTranslation();
+
     return (
         <div className="GrayBackground2">
             <div className="Content">
-                <Subtitle subtitle="Autres compétences" />
+                <Subtitle subtitle={t('other-skills')} />
             </div>
             <div className="Glassmorphism">
                 <OtherSkillsArray />

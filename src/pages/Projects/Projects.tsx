@@ -4,10 +4,13 @@ import GithubButton from "../../components/GithubButton/GithubButton";
 import { getProjects } from "../../services/projects";
 import ProjectInformation from "../../components/PopUp/ProjectInformation/ProjectInformation";
 import './Projects.css';
+import {useTranslation} from "react-i18next";
 
 export default function Projects() {
     const [projectInformation, setProjectInformation] = useState(false);
     const [projectIndex, setProjectIndex] = useState(0);
+
+    const { t } = useTranslation();
 
     const handleClick = (index: number) => {
         setProjectIndex(index);
@@ -16,7 +19,7 @@ export default function Projects() {
 
     return (
         <>
-            <Subtitle subtitle={"Projets"} />
+            <Subtitle subtitle={t('projects')} />
             <div className="ProjectsContainer">
                 <div className="Projects">
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
@@ -39,9 +42,9 @@ export default function Projects() {
             <div className="ProjectsBackground"></div>
             <div className="PurpleBackground">
                 <div className="FlexColumn" style={{ gap: '17px' }}>
-                    <p className="ProjectsMoreText">Intégralité de mes réalisations sur mon profil Github</p>
+                    <p className="ProjectsMoreText">{t('all-projects')}</p>
                     <a className="Href" href="https://github.com/DynaTiuM" target="_blank" rel="noopener noreferrer">
-                        <GithubButton text="Github Raphaël PERRIN   ▸" />
+                        <GithubButton text={t('github-raphael')} />
                     </a>
                 </div>
             </div>

@@ -1,10 +1,11 @@
 import './../PopUp.css';
 import { handleClickOutside, managePopUpScroll } from "../../../services/popUp";
 import React, { Dispatch, SetStateAction, useEffect, useRef } from "react";
-import { getProjectInformation } from "../../../services/projectInformation";
+import { useProjectInformation } from "../../../services/projectInformation";
 
 import './ProjectInformation.css';
 import Cross from "../Cross/Cross";
+import {useTranslation} from "react-i18next";
 
 interface ProjectInformationProps {
     index: number,
@@ -13,8 +14,10 @@ interface ProjectInformationProps {
 
 export default function ProjectInformation({ index, setProjectInformation }: ProjectInformationProps) {
 
+    const { t } = useTranslation();
+
     const overlayRef = useRef<HTMLDivElement>(null);
-    const projectInformation = getProjectInformation(index);
+    const projectInformation = useProjectInformation(index);
 
     useEffect(() => {
         managePopUpScroll(overlayRef);
@@ -57,13 +60,13 @@ export default function ProjectInformation({ index, setProjectInformation }: Pro
                                     <img className={"ProjectImage"} src={projectInformation.big_image}
                                          alt={projectInformation.project.name} />
                                     <div className={"TechnologiesContainer"}>
-                                        <div className={"TechnologiesTitle"}>Technologies</div>
+                                        <div className={"TechnologiesTitle"}>{t('technologies')}</div>
                                         <div className={"LanguagesContainer"}>
                                             {
                                                 projectInformation.languages.map((language, idx) => (
                                                     <div key={idx} className={"Language"}
                                                          style={{ backgroundColor: `var(--${language})` }}>
-                                                        {language}
+                                                        {language === 'CS' ? 'C#' : language}
                                                     </div>
                                                 ))
                                             }

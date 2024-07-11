@@ -10,7 +10,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 4px 0;
 
     transition: height 0.3s ease-in-out;
 }
@@ -28,15 +28,16 @@
 .Tab {
     margin-top: 22px;
     cursor: pointer;
-    transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, scale 0.2s ease-in-out;
 }
 
 .Tab:hover {
     color: var(--purple);
+    scale: 1.02;
 }
 
 .Tab:not(:hover) {
-    transition: scale 0.2s ease-in-out;
+    color: var(--text-color);
 }
 
 @media (max-width: 768px) {

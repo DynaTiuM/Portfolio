@@ -2,14 +2,18 @@ import Subtitle from "../../components/Subtitle/Subtitle";
 import Card from "./Card/Card";
 
 import './Languages.css'
-import {getLanguages} from "../../services/languages";
+import {useLanguages} from "../../services/languages";
+import {useTranslation} from "react-i18next";
 
 export default function Languages() {
+
+    const { t } = useTranslation();
+
     return <>
-        <Subtitle subtitle={"Langues"}/>
+        <Subtitle subtitle={t('languages')}/>
         <div className = "LanguagesScroll">
             <div style={{display: 'flex', gap: 40, justifyContent: 'center', height: 520}}>
-                {getLanguages().map((card, index) => (
+                {useLanguages().map((card, index) => (
                     <Card
                         key={index}
                         language_name={card.language_name}

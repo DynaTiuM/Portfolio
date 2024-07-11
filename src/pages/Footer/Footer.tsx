@@ -1,8 +1,12 @@
 import './Footer.css'
+import {useTranslation} from "react-i18next";
 
 export default function Footer() {
+
+    const { t } = useTranslation();
+
     return <div className={"FooterBackground"}>
-        <p className={"Rights"}>© Raphael PERRIN - Tous droits réservés.</p>
-        <p className={"FooterText"}>Site web réalisé en React de A à Z par mes soins.</p>
+        <p className={"Rights"}>{t('all-rights-reserved')}</p>
+        <p className={"FooterText"}>{t('website-realised')}</p>
     </div>
 }

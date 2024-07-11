@@ -6,8 +6,12 @@ import { GPAProps } from "../../models/GPA";
 import GPAButton from "../../components/GPA/GPAButton/GPAButton";
 import {getGPAS} from "../../services/gpas";
 import GPAInformation from "../../components/PopUp/GPAInformation/GPAInformation";
+import {useTranslation} from "react-i18next";
 
 export default function Results() {
+
+    const { t } = useTranslation();
+
     const [gpaInformation, setGpaInformation] = useState<boolean>(false);
     return (
         <>
@@ -21,7 +25,7 @@ export default function Results() {
                     ))}
                 </div>
                 <div className={"GPAButtonContainer"}>
-                    <GPAButton text={"Plus d'informations   ▸"} setGpaInformation={setGpaInformation} />
+                    <GPAButton text={t('more-information')} setGpaInformation={setGpaInformation} />
                 </div>
                 <div className="PlusBackground"></div>
             </div>

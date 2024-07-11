@@ -4,14 +4,18 @@ import Title from "../../components/Title/Title";
 
 import './Contact.css'
 import Architect from "../../assets/images/backgrounds/architect.svg";
+import {useTranslation} from "react-i18next";
 
 export default function Contact() {
+
+    const { t } = useTranslation();
+
     return <>
         <img className={"Architect"} src={Architect} alt={""}/>
         <div className={"ContactGrayBackground"}>
             <div className={"ContactContainer"}>
-                <Title title={"Contact"}/>
-                <p>Contactez moi via LinkedIn ou par e-mail :</p>
+                <Title title={t('contact')}/>
+                <p>{t('contact-me')}</p>
                 <div className={"FlexRow"}>
                     <div className={"ContactFlex"}>
                         <div className={"FlexRow"} style={{gap: "15px"}}>

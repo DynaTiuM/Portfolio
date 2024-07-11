@@ -5,21 +5,25 @@ import React from "react";
 import {GPAInformationProps} from "../../../../models/GPAInformation";
 import {UVProps} from "../../../../models/UV";
 import Blank from "../../../Blank/Blank";
+import {useTranslation} from "react-i18next";
 
 interface UVTabProps {
     gpaInformation: GPAInformationProps;
 }
 
 export default function UVTab({gpaInformation}: UVTabProps) {
+
+    const { t } = useTranslation();
+
     return (
         <>
             <div className={"UVTabContainer"}>
                 <div className={"UVSectionsContainer"}>
                     <div className={"UVSections"}>
-                        <p>Matière</p>
-                        <p>Description</p>
-                        <p>Note</p>
-                        <p>ECTS</p>
+                        <p>{t('subject')}</p>
+                        <p>{t('description')}</p>
+                        <p>{t('mark')}</p>
+                        <p>{t('ECTS')}</p>
                     </div>
                 </div>
                 <div className={"UVTab"}>

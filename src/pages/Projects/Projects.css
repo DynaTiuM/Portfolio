@@ -52,7 +52,7 @@
 .Project {
     position: relative;
     margin-bottom: 10px;
-    width: auto;
+    width: 20.4vw;
     height: 20vw;
     min-height: 300px;
     transition: transform 0.25s ease-in-out;

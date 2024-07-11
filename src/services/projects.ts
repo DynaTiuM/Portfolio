@@ -10,7 +10,7 @@ const projects: Project[] = [
     {id: 0, src: Azul, name: "Azul"},
     {id: 1, src: Twitturtle, name: "Twitturtle"},
     {id: 2, src: Tetris, name: "Tetris"},
-    {id: 3, src: Unity, name: "Unity"},
+    {id: 3, src: Unity, name: "Mini jeux Unity"},
     {id: 4, src: Pogo, name: "Pogo"},
     {id: 5, src: Ludiq, name: "Ludiq"}
 ]
