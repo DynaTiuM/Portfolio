@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import './Menu.css';
-import Language from '../../assets/images/anglais.png';
+import Language from '../../assets/images/language_flags/en.png';
 import { scrollToSection } from "../../services/scroll";
 import MenuIcon from '../../assets/images/menu.png';
 
 import { useTranslation } from 'react-i18next';
+import DropDown from "../DropDown/DropDown";
+import {handleClickOutside} from "../../services/popUp";
 
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
@@ -29,16 +31,26 @@ export default function Menu() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { width } = useWindowSize();
 
-    const { i18n } = useTranslation();
     const { t } = useTranslation();
-
-    const changeLanguage = (lng: string) => {
-        i18n.changeLanguage(lng);
-    };
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+
+    useEffect(() => {
+        const handleClick = (event: any) => {
+            if (isMenuOpen && !event.target.closest('.Menu')) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('click', handleClick);
+
+        return () => {
+            document.removeEventListener('click', handleClick);
+        };
+    }, [isMenuOpen]);
 
     return (
         <div className={`Menu ${isMenuOpen ? '' : 'retracted'}`}>
@@ -63,7 +75,7 @@ export default function Menu() {
                         scrollToSection('contact', 0);
                         if(width <= 768) toggleMenu();
                     }}>{t('contact')}</p>
-                    <img onClick={() => changeLanguage('en')} src={Language} alt="language" height="40px" />
+                    <DropDown />
                 </>
             )}
         </div>

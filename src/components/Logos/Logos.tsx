@@ -1,4 +1,4 @@
-import {getLogos} from "../../services/logos";
+import {useLogos} from "../../services/logos";
 import Logo from "./Logo/LogoComponent";
 
 import './Logos.css'
@@ -14,7 +14,7 @@ export default function Logos() {
         <Blank marginTopValue={40} />
         <div className={"FlexRow"}>
             <div className={"LogoContainer"}>
-                {getLogos().map((logo, index) => (
+                {useLogos().map((logo, index) => (
                     <Logo src={logo.src} name={logo.name} description={logo.description} key={index} />
                 ))}
             </div>

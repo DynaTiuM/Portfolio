@@ -4,7 +4,7 @@ import './Results.css';
 import GPA from "../../components/GPA/GPABar/GPA";
 import { GPAProps } from "../../models/GPA";
 import GPAButton from "../../components/GPA/GPAButton/GPAButton";
-import {getGPAS} from "../../services/gpas";
+import {useGPAS} from "../../services/gpas";
 import GPAInformation from "../../components/PopUp/GPAInformation/GPAInformation";
 import {useTranslation} from "react-i18next";
 
@@ -17,10 +17,10 @@ export default function Results() {
         <>
             <div className="ResultsBackground">
                 <div className="ResultsTitle">
-                    <Subtitle subtitle="Résultats semestriels" />
+                    <Subtitle subtitle={t('half-year-results')} />
                 </div>
                 <div className="GPAList">
-                    {getGPAS().map((gpa: GPAProps, index: number) => (
+                    {useGPAS().map((gpa: GPAProps, index: number) => (
                         <GPA key={index} date={gpa.date} value={gpa.value} index={gpa.index} />
                     ))}
                 </div>

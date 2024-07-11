@@ -1,5 +1,5 @@
 import {GPAInformationProps} from "../models/GPAInformation";
-import {getGPA} from "./gpas";
+import {useGPA} from "./gpas";
 import {useTranslation} from "react-i18next";
 
 export const useGpaInformation = (): GPAInformationProps[] => {
@@ -8,7 +8,7 @@ export const useGpaInformation = (): GPAInformationProps[] => {
 
     return [
         {
-            gpa: getGPA(2),
+            gpa: useGPA(2),
             uvs: [
                 {
                     name: "ID01",
@@ -61,7 +61,7 @@ export const useGpaInformation = (): GPAInformationProps[] => {
             ]
         },
         {
-            gpa: getGPA(1),
+            gpa: useGPA(1),
             uvs: [
                 {
                     name: "HM40",
@@ -114,7 +114,7 @@ export const useGpaInformation = (): GPAInformationProps[] => {
             ]
         },
         {
-            gpa: getGPA(0),
+            gpa: useGPA(0),
             uvs: [
                 {
                     name: "AP4A",

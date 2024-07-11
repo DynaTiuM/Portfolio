@@ -36,7 +36,7 @@
 
   "i-am-passionate-about": "Ich bin begeistert von",
   "the": ",",
-  "i-get-involved": "und ich investiere viel in meine Arbeit.",
+  "i-get-involved": "und ich bringe mich viel in meiner Arbeit ein.",
 
   "computer-science": "Informatik",
   "programming": "Programmierung",
@@ -46,7 +46,7 @@
   "description": "Beschreibung",
   "mark": "Note",
   "ETCS": "ECTS",
-  "credits": "Credits",
+  "credits": "Kredite",
 
   "crunchtime": "Crunchtime - Eine einwöchige Veranstaltung organisiert von der UTBM",
   "mv50": "VR-Escape-Game-Migrationsprojekt in Augmented Reality",
@@ -104,9 +104,15 @@
   "unity_introduction": "Kleines Projekt, das auf Unity realisiert wurde und 3 verschiedene Minispiele umfasst:\n\n➜ Apfel-Fänger\n➜ Brick Breaker\n➜ Furapi Bird",
   "unity_description": "Dieses Projekt bot die Gelegenheit, die Funktionsweise von Unity zu entdecken und neue Möglichkeiten im Spieldesign zu erkunden. Es ermöglichte auch die Einführung in die C#-Programmiersprache. Da sie Java sehr ähnlich ist, erleichterte diese Sprache die Anpassung und Nutzung der während des Projekts erworbenen Fähigkeiten.",
   "ludiq_introduction": "Ludiq ist eine Plattform, die dem Austausch von Hobbys und Aktivitäten über eine Website gewidmet ist. Benutzer können Diskussionen erstellen, Beiträge veröffentlichen, Aktivitäten und Veranstaltungen organisieren, die mit ihren Interessen zusammenhängen. Diese Veranstaltungen stehen Mitgliedern offen, die dieselben Leidenschaften teilen.",
-  "ludiq_description": "Das Projekt wurde mit einer Backend-Architektur in PHP und einem Frontend in Angular entwickelt. Zur Sicherstellung einer robusten Struktur wurde eine Architektur Model - Services - Controller implementiert. Dieses Projekt bot die Möglichkeit, sich mit einem Framework vertraut zu machen und das Konzept der Komponenten zu beherrschen, um so die Entwicklung flexiblerer und nachhaltigerer Websites zu ermöglichen.",
+  "ludiq_description": "Das Projekt wurde mit einer Backend-Architektur in PHP und einem Frontend in Angular entwickelt. Zur Sicherstellung einer robusten Struktur wurde eine Architektur Model - Services - Controller implementiert.\n\nDieses Projekt bot die Möglichkeit, sich mit einem Framework vertraut zu machen und das Konzept der Komponenten zu beherrschen, um so die Entwicklung flexiblerer und nachhaltigerer Websites zu ermöglichen.",
 
   "technologies": "Technologien",
   "project-realization": "Projektdurchführung",
-  "introduction": "Einführung"
+  "introduction": "Einführung",
+
+  "ut_barista_description": "Club der UTBM, verantwortlich für die Bereitstellung und Wartung von Kaffeemaschinen in den Wohnbereichen.",
+  "outbm_description": "LGBT-Club der UTBM.",
+  "ut_rc_description": "Club der UTBM für Enthusiasten von ferngesteuerten Fahrzeugen und Geräten über Funk, wie Autos, Drohnen usw.",
+  "coust_ut_description": "Club für Nähen und Häkeln an der UTBM.",
+  "eventum_description": "Website im Rahmen eines Projekts der UTBM erstellt, um Studierende für Ausflüge, Abende und andere Veranstaltungen zu versammeln."
 }

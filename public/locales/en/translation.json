@@ -104,10 +104,16 @@
   "unity_introduction": "Small project realized on Unity, which includes 3 different mini-games:\n\n➜ Apple Catcher\n➜ Brick Breaker\n➜ Furapi Bird",
   "unity_description": "This project offered the opportunity to discover the workings of Unity and explore new possibilities in game design. It also allowed initiation into the C# programming language. Being very close to Java, this language facilitated adaptation and leveraging the skills acquired during the project.",
   "ludiq_introduction": "Ludiq is a platform dedicated to sharing hobbies and activities through a website. Users can create discussions, publish posts, organize activities, and events related to their interests. These events are open to members who share the same passions.",
-  "ludiq_description": "The project was developed with a Backend architecture in PHP and a Front-end in Angular. To ensure a robust structure, a Model - Services - Controller architecture was implemented. This project provided the opportunity to become familiar with a framework and to master the concept of components, thereby enabling the development of more flexible and sustainable websites.",
+  "ludiq_description": "The project was developed with a Backend architecture in PHP and a Front-end in Angular. To ensure a robust structure, a Model - Services - Controller architecture was implemented.\n\nThis project provided the opportunity to become familiar with a framework and to master the concept of components, thereby enabling the development of more flexible and sustainable websites.",
 
 
   "technologies": "Technologies",
   "project-realization": "Project realization",
-  "introduction": "Introduction"
+  "introduction": "Introduction",
+
+  "ut_barista_description": "UT Barista is a club at UTBM responsible for supplying and maintaining coffee machines in living areas.",
+  "outbm_description": "UTBM's LGBT club.",
+  "ut_rc_description": "UT RC is a club at UTBM dedicated to enthusiasts of remote-controlled vehicles and devices via radio signals, such as cars, drones, etc.",
+  "coust_ut_description": "Coust UT is a sewing and crochet club at UTBM.",
+  "eventum_description": "Eventum is a website created as part of a UTBM project to bring students together for outings, evenings, and other events."
 }
