@@ -59,6 +59,15 @@ export const useProjectInformation = (index: number): ProjectInformation | null 
             ],
             big_image: Unity
         },
+        {
+            project: getProject(5),
+            introduction: t('ludiq_introduction'),
+            description: t('ludiq_description'),
+            languages: [
+                "TS", "PHP"
+            ],
+            big_image: Ludiq
+        },
     ];
 
     for(const project of projectInformation) {

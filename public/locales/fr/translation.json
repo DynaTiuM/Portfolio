@@ -103,6 +103,10 @@
   "pogo_description": "Un défi majeur de ce projet consistait à concevoir une méthode d'évaluation permettant de déterminer le meilleur coup pour l'IA. Cette évaluation intégrait divers facteurs, tels que la position de la tour, le nombre de jetons en sa possession, la capacité de capturer une tour adverse ou de se protéger d'une capture, ainsi que la distance de déplacement possible.\n\nCe projet a permis de renforcer les compétences en Python et de comprendre l'implémentation de l'algorithme MinMax. Parallèlement, des compétences en création d'interfaces graphiques ont été développées en utilisant la bibliothèque QT.",
   "unity_introduction": "Petit projet réalisé sur Unity, qui comporte 3 mini jeux différents :\n\n➜ Apple Catcher\n➜ Brick Breaker\n➜ Furapi Bird",
   "unity_description": "Ce projet a offert l'opportunité de découvrir le fonctionnement de Unity ainsi que d'explorer de nouvelles possibilités en matière de conception de jeux. Il a également permis de s'initier au langage de programmation C#. Étant très proche de Java, ce langage a facilité l'adaptation et la mise à profit des compétences acquises au cours du projet.",
+
+  "ludiq_introduction": "Ludiq est une plateforme dédiée au partage de hobbies et d'activités à travers un site web. Les utilisateurs peuvent y créer des discussions, publier des posts, organiser des activités et des événements liés à leurs centres d'intérêt. Ces événements sont ouverts aux membres partageant les mêmes passions.",
+  "ludiq_description": "Le projet a été développé avec une architecture Backend en PHP et un Front-end en Angular. Pour assurer une structure robuste, une architecture Model - Services - Controller a été mise en place. Ce projet a offert l'opportunité de se familiariser avec un framework et de maîtriser la notion de composants, permettant ainsi de réaliser des sites web plus flexibles et durables dans le temps.",
+
   "technologies": "Technologies",
   "project-realization": "Réalisation du projet",
   "introduction": "Introduction"

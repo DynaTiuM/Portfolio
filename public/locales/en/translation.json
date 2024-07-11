@@ -103,6 +103,10 @@
   "pogo_description": "A major challenge of this project was designing an evaluation method to determine the best move for the AI. This evaluation integrated various factors, such as the position of the tower, the number of tokens in its possession, the ability to capture an opponent's tower or protect itself from capture, as well as the possible movement distance.\n\nThis project strengthened skills in Python and understanding the implementation of the MinMax algorithm. Additionally, skills in creating graphical interfaces were developed using the QT library.",
   "unity_introduction": "Small project realized on Unity, which includes 3 different mini-games:\n\n➜ Apple Catcher\n➜ Brick Breaker\n➜ Furapi Bird",
   "unity_description": "This project offered the opportunity to discover the workings of Unity and explore new possibilities in game design. It also allowed initiation into the C# programming language. Being very close to Java, this language facilitated adaptation and leveraging the skills acquired during the project.",
+  "ludiq_introduction": "Ludiq is a platform dedicated to sharing hobbies and activities through a website. Users can create discussions, publish posts, organize activities, and events related to their interests. These events are open to members who share the same passions.",
+  "ludiq_description": "The project was developed with a Backend architecture in PHP and a Front-end in Angular. To ensure a robust structure, a Model - Services - Controller architecture was implemented. This project provided the opportunity to become familiar with a framework and to master the concept of components, thereby enabling the development of more flexible and sustainable websites.",
+
+
   "technologies": "Technologies",
   "project-realization": "Project realization",
   "introduction": "Introduction"
