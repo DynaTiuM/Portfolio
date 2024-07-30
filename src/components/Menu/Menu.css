@@ -76,7 +76,6 @@
     .Tab {
         font-size: clamp(14px, 1.3vw, 22px);
     }
-    img {
-        width: 5%;
+    .MenuImg {
     }
 }

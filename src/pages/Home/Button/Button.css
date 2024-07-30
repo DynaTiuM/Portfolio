@@ -1,6 +1,6 @@
 .Button {
     border-radius: 10px;
-    font-size: clamp(16px, 1.1vw, 20px);
+    font-size: clamp(15px, 1.1vw, 20px);
     border: 1px var(--text-color) solid;
     background-color: var(--background-color);
     width: 13vw;

@@ -1,5 +1,4 @@
 .GithubButton {
-    font-size: clamp(16px, 3vw, 18px)!important;
     color: var(--purple);
     background: var(--background-color);
     width: 300px;

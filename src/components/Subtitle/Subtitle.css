@@ -1,5 +1,5 @@
 h4 {
-    font-size: clamp(25px, 3vw, 35px);
+    font-size: clamp(23px, 3vw, 35px);
     color: var(--text-color);
     font-family: 'Nexa-Bold', sans-serif;
     margin: 0 0 55px 0;

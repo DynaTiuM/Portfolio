@@ -22,7 +22,7 @@ export default function Projects() {
             <Subtitle subtitle={t('projects')} />
             <div className="ProjectsContainer">
                 <div className="Projects">
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                    <div className={"ProjectContainer"}>
                         {getProjects().map((project, index) => (
                             <div
                                 className={"Project"}

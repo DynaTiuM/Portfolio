@@ -15,7 +15,7 @@ export default function AboutMe() {
         <Blank marginTopValue={40} />
         <div className={"FlexColumn"} style={{gap: "15px"}}>
             <p className={"Text"}>{t('about-me-text-1')}</p>
-            <p className={"Text"}>{t('i-am-passionate-about')} <span className={"BoldText"}>{t('computer-science')}</span>{t('the')} <span className={"BoldText"}>{t('programming')}</span>{t('the')} <span className={"BoldText"}>{t('project-management')}</span> {t('i-get-involved')}</p>
+            <p className={"Text"}>{t('i-am-passionate-about')}<span className={"BoldText"}>{t('computer-science')}</span>{t('the')} <span className={"BoldText"}>{t('programming')}</span>{t('the')} <span className={"BoldText"}>{t('project-management')}</span> {t('i-get-involved')}</p>
             <p className={"Text"}>{t('about-me-text-3')}</p>
 
         </div>

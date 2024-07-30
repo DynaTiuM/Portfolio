@@ -1,12 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import './Menu.css';
-import Language from '../../assets/images/language_flags/en.png';
 import { scrollToSection } from "../../services/scroll";
 import MenuIcon from '../../assets/images/menu.png';
 
 import { useTranslation } from 'react-i18next';
 import DropDown from "../DropDown/DropDown";
-import {handleClickOutside} from "../../services/popUp";
 
 function useWindowSize() {
     const [windowSize, setWindowSize] = useState({
@@ -55,7 +53,7 @@ export default function Menu() {
     return (
         <div className={`Menu ${isMenuOpen ? '' : 'retracted'}`}>
             <button className="MenuButton" onClick={toggleMenu}>
-                <img src={MenuIcon} alt="Menu" width="30px" />
+                <img className = "MenuImg" src={MenuIcon} alt="Menu" width="30px" />
             </button>
             {(isMenuOpen || width > 768) &&  (
                 <>

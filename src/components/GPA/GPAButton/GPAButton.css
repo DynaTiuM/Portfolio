@@ -1,5 +1,4 @@
 .GPAButton {
-    font-size: clamp(16px, 3vw, 18px)!important;
     background-color: var(--purple);
     color: var(--background-color);
     width: calc(200px + 5vw);

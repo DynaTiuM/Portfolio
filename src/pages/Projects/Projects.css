@@ -40,7 +40,6 @@
 }
 
 .ProjectsMoreText {
-    font-size: clamp(18px, 3vw, 30px)!important;
     margin: 0;
 }
 
@@ -49,10 +48,17 @@
     color: inherit;
 }
 
+.ProjectContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+}
+
 .Project {
     position: relative;
     margin-bottom: 10px;
-    width: 20.4vw;
+    min-width: 20vw;
     height: 20vw;
     min-height: 300px;
     transition: transform 0.25s ease-in-out;
