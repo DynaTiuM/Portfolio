@@ -141,3 +141,33 @@
         gap: 19px;
     }
 }
+
+
+@media (max-width: 455px) {
+    .VR {
+        max-height: 115px;
+    }
+    .UI {
+        max-height: 110px;
+    }
+    .Blender {
+        max-height: 94px;
+    }
+    .Engines {
+        max-height: 107px;
+    }
+    .Pose {
+        max-height: 94px;
+    }
+    .OpenGL {
+        max-height: 94px;
+    }
+
+    .Line {
+        gap: 15px;
+    }
+    .Line3 {
+        margin-top: 15px;
+        gap: 15px;
+    }
+}
