@@ -21,21 +21,21 @@ function App() {
                 <div id="home"><Home /></div>
                 <Blank marginTopValue={200} />
                 <div id="actualLearnings"><ActualLearnings /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="skills"><Skills /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="otherSkills"><OtherSkills /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="projects"><Projects /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div><Internship /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="languages"><Languages /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="results"><Results /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="aboutMe"><AboutMe /></div>
-                <Blank marginTopValue={100} />
+                <Blank marginTopValue={120} />
                 <div id="contact"><Contact /></div>
                 <Footer />
           </div>

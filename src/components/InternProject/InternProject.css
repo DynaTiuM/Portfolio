@@ -1,0 +1,24 @@
+.Title {
+    font-family: 'Nexa-Bold', sans-serif;
+    color: var(--purple);
+    font-size: clamp(19px, 1.5vw, 23px);
+}
+
+.InternProjectContainer {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+
+.InternProjectContainer:hover {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-align: left;
+}
