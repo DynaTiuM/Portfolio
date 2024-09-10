@@ -17,9 +17,7 @@
         height: 420px;
     }
     .collapsed .Title {
-        margin-top: 160px;
-        margin-left: -47px;
-        transform: rotate(-90deg) translateY(-120px);
+        transform: rotate(-90deg) translateY(-167px) translateX(-140px);
         transform-origin: bottom;
         width: 400px;
     }
