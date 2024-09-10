@@ -12,6 +12,7 @@ import Blender from "../assets/images/other-skills/blender.png";
 import Office from "../assets/images/other-skills/office.png";
 import Latex from "../assets/images/other-skills/latex.png";
 import VegasPro from "../assets/images/other-skills/vegas.png";
+import AffinityDesigner from '../assets/images/other-skills/affinity-designer.png';
 
 import {OtherSkill} from "../models/OtherSkill";
 
@@ -30,6 +31,7 @@ export const getOtherSkills = (): OtherSkill[] => {
         { src: Blender, name: 'Blender' },
         { src: Office, name: 'Office' },
         { src: Latex, name: 'Latex' },
-        { src: VegasPro, name: 'VEGAS Pro' }
+        { src: VegasPro, name: 'VEGAS Pro' },
+        { src: AffinityDesigner, name: 'Affinity Designer 2' }
     ]
 }

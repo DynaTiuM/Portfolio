@@ -29,7 +29,7 @@ function App() {
                 <div id="projects"><Projects /></div>
                 <Blank marginTopValue={120} />
                 <div><Internship /></div>
-                <Blank marginTopValue={120} />
+                <Blank marginTopValue={160} />
                 <div id="languages"><Languages /></div>
                 <Blank marginTopValue={120} />
                 <div id="results"><Results /></div>
