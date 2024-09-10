@@ -55,6 +55,11 @@
     justify-content: center;
 }
 
+.ProjectImg {
+    height: 100%;
+    object-fit: cover;
+}
+
 .Project {
     position: relative;
     margin-bottom: 10px;
@@ -77,6 +82,7 @@
     background: rgba(0, 0, 0, 0);
     transition: background 0.25s ease-in-out;
     pointer-events: none;
+    aspect-ratio: 1/1;
 }
 
 .Project::after {

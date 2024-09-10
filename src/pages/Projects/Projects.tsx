@@ -32,7 +32,7 @@ export default function Projects() {
                                 <img
                                     src={project.src}
                                     alt={project.name}
-                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                    className={"ProjectImg"}
                                 />
                             </div>
                         ))}
