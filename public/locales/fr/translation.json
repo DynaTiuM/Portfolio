@@ -117,5 +117,11 @@
   "coust_ut_description": "Club de couture, crochet de l'UTBM.",
   "eventum_description": "Site internet créé dans le cadre d'un projet de l'UTBM visant à rassembler les étudiants pour des sorties, soirées et autres événements.",
 
-  "internship": "Stage"
+  "internship": "Stage",
+  "axopen_info": "J’ai eu l’opportunité de pouvoir travailler dans l’entreprise Axopen dans le cadre de mon stage d’assistant ingénieur lors de ma quatrième année d’études. Il s’agit d’une entreprise spécialisée dans le développement web et audits. Ce stage m’a permis de développer mes compétences dans le domaine du développement web et de m’immerger dans l’environnement professionnel tout en collaborant au sein d’une équipe.",
+  "axopen_project_one": "Il s’agissait d’un projet destiné à mettre en place un programme permettant de générer des schémas SVG représentants l’architecture entre des applications, hébergements, services et en expliquer le fonctionnement à travers des processus ou liaisons. Ce projet m’a permis de développer mes compétences avec le langage de programmation C# ainsi que sur le framework .NET. Il m’a également permis de m’initier à GitLab, une plateforme de développement et d’hébergement basée sur Git.",
+  "axopen_project_two": "Il s’agissait de la mise en place d’un portail à destination d’un client pour lui faciliter la vérification de fichiers EXCEL envoyés par des représentants de pays. Ce projet m’a permis de développer mes compétences en travail d’équipe, d’appréhender davantage aux frameworks comme Laravel (dont le langage de programmation est PHP) du côté du back-end ou React pour le front-end.",
+  "axopen_period": "Septembre 2023 - Février 2024",
+  "axopen_project_one_title": "Premier project - Schémas SI",
+  "axopen_project_two_title": "Deuxième projet - Portail RH"
 }

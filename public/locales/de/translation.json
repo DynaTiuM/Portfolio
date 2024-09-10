@@ -116,6 +116,11 @@
   "coust_ut_description": "Club für Nähen und Häkeln an der UTBM.",
   "eventum_description": "Website im Rahmen eines Projekts der UTBM erstellt, um Studierende für Ausflüge, Abende und andere Veranstaltungen zu versammeln.",
 
-
-  "internship": "Praktikum"
+  "internship": "Praktikum",
+  "axopen_info": "Ich hatte die Gelegenheit, bei Axopen im Rahmen meines Praktikums als Assistenten-Ingenieur während meines vierten Studienjahres zu arbeiten. Axopen ist ein Unternehmen, das sich auf Webentwicklung und Audits spezialisiert hat. Dieses Praktikum ermöglichte es mir, meine Fähigkeiten in der Webentwicklung zu erweitern und in einem professionellen Umfeld zu arbeiten, während ich in einem Team zusammenarbeitete.",
+  "axopen_project_one": "Es handelte sich um ein Projekt zur Erstellung eines Programms, das SVG-Diagramme generiert, die die Architektur zwischen Anwendungen, Hosting-Diensten und deren Funktionsweise durch Prozesse oder Verbindungen darstellen. Dieses Projekt ermöglichte es mir, meine Kenntnisse in der C#-Programmiersprache sowie im .NET-Framework zu vertiefen. Außerdem konnte ich mich mit GitLab, einer auf Git basierenden Entwicklungs- und Hosting-Plattform, vertraut machen.",
+  "axopen_project_two": "Dieses Projekt beinhaltete die Einrichtung eines Portals für einen Kunden, um die Überprüfung von EXCEL-Dateien, die von Ländervertretern gesendet wurden, zu erleichtern. Dieses Projekt ermöglichte es mir, meine Teamarbeit zu verbessern und mich besser mit Frameworks wie Laravel (dessen Programmiersprache PHP ist) im Backend und React im Frontend vertraut zu machen.",
+  "axopen_period": "September 2023 - Februar 2024",
+  "axopen_project_one_title": "Erstes Projekt - IT-Schemas",
+  "axopen_project_two_title": "Zweites Projekt - HR-Portal"
 }

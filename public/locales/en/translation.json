@@ -117,5 +117,11 @@
   "coust_ut_description": "Coust UT is a sewing and crochet club at UTBM.",
   "eventum_description": "Eventum is a website created as part of a UTBM project to bring students together for outings, evenings, and other events.",
 
-  "internship": "Internship"
+  "internship": "Internship",
+  "axopen_info": "I had the opportunity to work at Axopen as part of my assistant engineer internship during my fourth year of studies. Axopen is a company specialized in web development and audits. This internship allowed me to develop my skills in web development and immerse myself in a professional environment while collaborating within a team.",
+  "axopen_project_one": "This was a project aimed at creating a program that generates SVG diagrams representing the architecture between applications, hosting services, and explains their operation through processes or connections. This project allowed me to develop my skills in C# programming language as well as the .NET framework. It also introduced me to GitLab, a development and hosting platform based on Git.",
+  "axopen_project_two": "This project involved setting up a portal for a client to facilitate the verification of EXCEL files sent by country representatives. This project allowed me to improve my teamwork skills and gain more experience with frameworks such as Laravel (which uses PHP as the programming language) for back-end development and React for front-end development.",
+  "axopen_period": "September 2023 - February 2024",
+  "axopen_project_one_title": "First Project - IT Schematics",
+  "axopen_project_two_title": "Second Project - HR Portal"
 }
