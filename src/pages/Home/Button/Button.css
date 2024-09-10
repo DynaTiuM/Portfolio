@@ -1,11 +1,11 @@
 .Button {
     border-radius: 10px;
-    font-size: clamp(15px, 1.1vw, 20px);
+    font-size: clamp(15px, 1.1vw, 19px);
     border: 1px var(--text-color) solid;
     background-color: var(--background-color);
-    width: 13vw;
+    width: 14vw;
     min-width: 205px;
-    height: 45px;
+    height: 58px;
     display: flex;
     justify-content: center;
     align-items: center;

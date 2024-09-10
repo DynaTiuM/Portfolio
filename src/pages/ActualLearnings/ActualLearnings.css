@@ -12,7 +12,6 @@
     z-index: -1;
 }
 
-
 @media (max-width: 1200px) {
     .GrayBackground {
         height: 587px;
@@ -25,9 +24,14 @@
     }
 }
 
-
 @media (max-width: 768px) {
     .GrayBackground {
         height: 434px;
+    }
+}
+
+@media (max-width: 455px) {
+    .GrayBackground {
+        height: 326px;
     }
 }

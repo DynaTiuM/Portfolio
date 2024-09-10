@@ -31,7 +31,6 @@ export const getOtherSkills = (): OtherSkill[] => {
         { src: Blender, name: 'Blender' },
         { src: Office, name: 'Office' },
         { src: Latex, name: 'Latex' },
-        { src: VegasPro, name: 'VEGAS Pro' },
-        { src: AffinityDesigner, name: 'Affinity Designer 2' }
+        { src: VegasPro, name: 'VEGAS Pro' }
     ]
 }

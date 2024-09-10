@@ -8,7 +8,7 @@ export default function ActualLearnings() {
 
     const { t } = useTranslation();
 
-    return<div style = {{backgroundColor: "var(--background-color)"}}>
+    return <div style = {{backgroundColor: "var(--background-color)"}}>
         <div className={"Titles"}>
             <Title title={t('portfolio')} />
             <Subtitle subtitle={t('actual-learnings')} />
