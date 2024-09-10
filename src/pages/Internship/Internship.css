@@ -1,5 +1,5 @@
 .AxopenImg {
-    width: 23vw;
+    width: clamp(200px, 20vw, 600px);
 }
 
 .InternshipContainer {
@@ -8,8 +8,30 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+@media (max-width: 1400px) {
+    .InternshipContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .LeftContainer {
+        text-align: center;
+        align-items: center!important;
+        width: 80%!important;
+    }
+
+    .AxopenX {
+        position: relative;
+        width: 100%;
+        transform: scale(1);
+    }
+
+    .AxopenText {
+        max-width: 800px!important;
+    }
 }
 
 .AxopenX {

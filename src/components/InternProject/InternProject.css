@@ -11,9 +11,27 @@
     backdrop-filter: blur(6px);
 }
 
-.InternProjectContainer.collapsed {
-    width: 30px;
-    height: 420px;
+@media (min-width: 1401px) {
+    .InternProjectContainer.collapsed {
+        width: 30px;
+        height: 420px;
+    }
+    .collapsed .Title {
+        margin-top: 160px;
+        margin-left: -47px;
+        transform: rotate(-90deg) translateY(-120px);
+        transform-origin: bottom;
+        width: 400px;
+    }
+}
+@media (max-width: 1400px) {
+    .InternProjectContainer.collapsed {
+        height: 55px;
+        width: calc(25% + (1400px - 80vw) * 0.2);
+    }
+    .InternProjectContainer.expanded {
+        width: calc(25% + (1400px - 80vw) * 0.2);
+    }
 }
 
 .InternProjectContainer.expanded {
@@ -27,12 +45,7 @@
 }
 
 .collapsed .Title {
-    margin-top: 100px;
     transition: opacity 3s ease;
-    transform: rotate(-90deg) translateY(-120px);
-    transform-origin: bottom;
-    width: 300px;
-
 }
 
 .Description {
