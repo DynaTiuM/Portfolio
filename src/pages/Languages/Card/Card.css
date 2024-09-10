@@ -67,4 +67,5 @@
     font-size: 1em;
     text-align: left;
     text-wrap: wrap;
+    word-break: break-word;
 }
