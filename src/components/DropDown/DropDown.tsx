@@ -22,7 +22,18 @@ export default function DropDown() {
 
     return (
         <div className="DropdownContainer">
-            <img className={"LanguageFlag"} src={require(`../../assets/images/language_flags/${i18n.language}.png`)} alt="language" height="40px" onClick={toggleDropdown} />
+            {i18n.language === "en" && (
+                <img className={"LanguageFlag"} src={English}
+                     alt="language" height="40px" onClick={toggleDropdown}/>
+            )}
+            {i18n.language === "fr" && (
+                <img className={"LanguageFlag"} src={French}
+                     alt="language" height="40px" onClick={toggleDropdown}/>
+            )}
+            {i18n.language === "de" && (
+                <img className={"LanguageFlag"} src={German}
+                     alt="language" height="40px" onClick={toggleDropdown}/>
+            )}
             {showDropdown && (
                 <div className="DropdownContent">
                     {i18n.language !== "en" && (
