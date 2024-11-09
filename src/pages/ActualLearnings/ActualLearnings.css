@@ -1,0 +1,37 @@
+.Titles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.GrayBackground {
+    background-color: var(--gray-background);
+    height: 690px;
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .GrayBackground {
+        height: 587px;
+    }
+}
+
+@media (max-width: 992px) {
+    .GrayBackground {
+        height: 514px;
+    }
+}
+
+@media (max-width: 768px) {
+    .GrayBackground {
+        height: 434px;
+    }
+}
+
+@media (max-width: 455px) {
+    .GrayBackground {
+        height: 326px;
+    }
+}

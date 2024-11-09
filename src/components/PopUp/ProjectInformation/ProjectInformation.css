@@ -1,0 +1,83 @@
+.ProjectInformation {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 30px;
+}
+
+@media (max-width: 1580px) {
+    .ProjectInformation {
+        justify-content: center;
+    }
+    .ProjectImage {
+        margin-top: -20px;
+    }
+}
+@media (min-width: 1581px) {
+    .ProjectImage {
+        margin-top: 20px;
+    }
+
+}
+
+.ProjectTitle {
+    margin-bottom: 0;
+}
+
+.ProjectSubtitle {
+    font-size: clamp(22px, 2vw, 28px);
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.TextContainer {
+    text-align: left;
+}
+
+.ProjectImage {
+    min-width: 340px;
+    width: 30vw;
+}
+
+.ProjectText {
+    max-width: 800px;
+}
+
+
+@media (max-width: 1920px) {
+    .ProjectText {
+        max-width: 610px;
+    }
+}
+
+.TechnologiesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    gap: 50px;
+}
+
+.TechnologiesTitle {
+    font-family: 'Nexa-Bold', sans-serif;
+    margin-right: auto;
+}
+
+.LanguagesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: flex-end;
+}
+
+
+.Language {
+    border-radius: 100px;
+    padding: 8px 20px 3px 20px;
+    text-align: center;
+    color: var(--background-color);
+}

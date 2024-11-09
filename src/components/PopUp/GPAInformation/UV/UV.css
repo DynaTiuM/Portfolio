@@ -1,0 +1,45 @@
+.UV {
+    display: grid;
+    grid-template-columns: 2fr 15fr 1fr 3fr;
+    gap: 10px;
+    background-color: var(--background-color);
+    border-radius: 14px;
+    padding: 6px 20px 6px 20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
+    align-items: center;
+}
+
+.UVText, .UVName {
+    margin: 0;
+    text-align: left;
+    font-size: clamp(14px, 1.3vw, 20px);
+}
+
+.UVName {
+    font-size: clamp(8px, 1.3vw, 20px);
+}
+
+.UVLetterContainer, .UVCreditContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.UVLetterContainer {
+    border-radius: 100px;
+}
+
+.UVCreditContainer {
+    border-radius: 14px;
+    min-width: 70px;
+}
+
+.UVLetterText, .UVCreditText, .UVText {
+    margin: 0 0 -5px;
+}
+
+.UVCreditText {
+    font-size: clamp(12px, 1.3vw, 20px);
+}

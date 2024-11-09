@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: clamp(16px, 1.5vw, 20px);
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--background-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,11 +29,82 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --background-color: rgb(255, 255, 255);
+  --text-color: rgb(0, 0, 0);
+  --purple: #AE47FF;
+  --gray-background: #FAF9FA;
+  --green: #97D075;
+  --light-green: #E4E9E1;
+  --dark-purple: #562DB5;
+  --overlay-background: rgba(19, 24, 32, 0.25);
+  --popup-background: rgba(255, 255, 255, 0.86);
+  --tab-border: #E1E1E1;
+
+  --c-letter: #BFE7A6;
+  --b-letter: #97D075;
+  --a-letter: #71BB44;
+
+  --Java: #b03838;
+  --Python: #3dabab;
+  --PHP: #9238b0;
+  --JS: #f5d01d;
+  --CSS: #b03878;
+  --CPP: #4d579b;
+  --CS: #348f75;
+  --TS: #2f7fc1;
+}
+
+h1 {
+  font-size: clamp(23px, 4.42vw, 60px);
+  width: 500px;
+  text-align: left;
+  margin-bottom: 0;
+  font-family: 'Nexa-Bold', sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: clamp(14px, 1.43vw, 26px);
+  width: 370px;
+  text-align: left;
+}
+
+.Purple {
+  color: var(--purple);
+}
+
+@font-face {
+  font-family: 'Nexa';
+  src: url('fonts/Nexa Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Nexa-Bold';
+  src: url('fonts/Nexa Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Nexa-Light';
+  src: url('fonts/Nexa Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Nexa-Heavy';
+  src: url('fonts/Nexa Heavy.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Nexa', sans-serif;
+}
+
+.FlexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FlexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

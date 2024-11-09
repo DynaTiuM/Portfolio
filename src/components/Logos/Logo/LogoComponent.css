@@ -1,0 +1,16 @@
+.LogoComponent {
+    max-width: 200px;
+}
+
+.LogoComponent:hover {
+    scale: 1.05;
+    transform: rotate(2deg)!important;
+    transition: 0.25s ease-in-out;
+}
+
+
+.LogoComponent:not(:hover) {
+    scale: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}

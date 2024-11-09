@@ -1,0 +1,18 @@
+
+.Cross {
+    width: 30px;
+    height: 30px;
+
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.Cross:hover {
+    transform: scale(1.2) rotate(90deg);
+}
+
+.CrossContainer {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}

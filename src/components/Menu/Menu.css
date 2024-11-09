@@ -1,0 +1,81 @@
+.Menu {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    gap: 65px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 0;
+
+    transition: height 0.3s ease-in-out;
+}
+
+.Menu.retracted {
+    height: 60px;
+    overflow: hidden;
+}
+
+.MenuButton {
+    display: none;
+}
+
+
+.Tab {
+    margin-top: 22px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.Tab:hover {
+    color: var(--purple);
+    scale: 1.02;
+}
+
+.Tab:not(:hover) {
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .Menu {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        height: auto;
+    }
+    .Menu.retracted {
+        height: 30px;
+    }
+    .Tab {
+        margin-top: 10px;
+    }
+    .Tab:hover {
+        scale: 1.05;
+    }
+    .MenuButton {
+        display: flex;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        background: none;
+        border: none;
+        outline: none;
+        z-index: 11;
+    }
+}
+
+@media (max-width: 480px) {
+    .Menu {
+        gap: 15px;
+    }
+    .Tab {
+        font-size: clamp(14px, 1.3vw, 22px);
+    }
+    .MenuImg {
+    }
+}

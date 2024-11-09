@@ -1,0 +1,39 @@
+.StickerImg {
+    width: 25vw;
+    min-width: 200px;
+    max-width: 700px;
+}
+
+.StickersFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.StickersText {
+    max-width: 700px;
+    width: 80%;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1469px) {
+    .StickersText {
+        max-width: 1000px!important;
+        width: 80%;
+    }
+    .StickersFlex {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1919px) {
+    .StickersText {
+        max-width: 550px;
+        width: 80%;
+    }
+}

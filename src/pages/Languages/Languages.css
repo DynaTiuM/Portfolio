@@ -1,0 +1,9 @@
+.LanguagesScroll {
+    display: flex;
+    padding-top: 4px;
+    gap: 40px;
+    padding-inline: 13.5%;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+}

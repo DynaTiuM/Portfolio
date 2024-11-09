@@ -1,0 +1,77 @@
+.GrayBackground2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-background);
+    height: 800px;
+    position: relative;
+}
+
+.Content {
+    margin-bottom: calc(480px + 12vh);
+}
+
+@media (max-width: 1470px) {
+    .Content {
+        margin-bottom: 500px;
+    }
+    .GrayBackground2 {
+        height: 700px;
+    }
+}
+@media (max-width: 900px) {
+    .Content {
+        margin-bottom: 600px;
+    }
+    .GrayBackground2 {
+        height: 800px;
+    }
+}
+
+@media (max-width: 700px) {
+    .Content {
+        margin-bottom: 900px;
+    }
+    .GrayBackground2 {
+        height: 1100px;
+    }
+}
+
+.Glassmorphism {
+    padding: 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(7px);
+    background-color: rgba(255, 255, 255, 0.86);
+    position: absolute;
+    width: 70%;
+    z-index: 1;
+}
+
+.PurpleLines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    position: absolute;
+    width: 100%;
+    top: 40.5%;
+    left: 0;
+}
+
+.PurpleBackground1,
+.PurpleBackground2,
+.PurpleBackground3,
+.PurpleBackground4 {
+    background-color: var(--purple);
+    width: 100%;
+}
+
+.PurpleBackground1 { height: 45px; }
+.PurpleBackground2 { height: 27px; }
+.PurpleBackground3 { height: 17px; }
+.PurpleBackground4 { height: 7px; }

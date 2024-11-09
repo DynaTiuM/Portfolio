@@ -1,0 +1,6 @@
+h3 {
+    font-size: clamp(28px, 4vw, 46px);
+    color: var(--purple);
+    font-family: 'Nexa-Heavy', sans-serif;
+    margin: 0;
+}

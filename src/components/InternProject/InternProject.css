@@ -1,0 +1,58 @@
+.InternProjectContainer {
+    position: relative;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px 30px;
+    text-align: left;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+}
+
+@media (min-width: 1401px) {
+    .InternProjectContainer.collapsed {
+        width: 30px;
+        height: 420px;
+    }
+    .collapsed .Title {
+        transform: rotate(-90deg) translateY(-167px) translateX(-140px);
+        transform-origin: bottom;
+        width: 400px;
+    }
+}
+@media (max-width: 1400px) {
+    .InternProjectContainer.collapsed {
+        height: 55px;
+        width: calc(25% + (1400px - 80vw) * 0.2);
+    }
+    .InternProjectContainer.expanded {
+        width: calc(25% + (1400px - 80vw) * 0.2);
+    }
+}
+
+.InternProjectContainer.expanded {
+    height: 420px;
+}
+
+.Title {
+    font-family: 'Nexa-Bold', sans-serif;
+    color: var(--purple);
+    font-size: clamp(19px, 1.5vw, 23px);
+}
+
+.collapsed .Title {
+    transition: opacity 3s ease;
+}
+
+.Description {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.expanded .Description {
+    display: block;
+    opacity: 1;
+}

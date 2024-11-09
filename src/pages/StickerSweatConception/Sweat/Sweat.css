@@ -1,0 +1,27 @@
+.SweatImg {
+    width: 20vw;
+    min-width: 220px;
+    max-width: 700px;
+
+    border-radius: 10px;
+}
+
+.SweatText {
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+@media (max-width: 1469px) {
+    .SweatText {
+        max-width: 800px!important;
+    }
+}
+
+@media (max-width: 1919px) {
+    .SweatText {
+        max-width: 550px;
+    }
+}
