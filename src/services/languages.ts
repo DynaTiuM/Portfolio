@@ -4,6 +4,7 @@ import Anglais from "../assets/images/languages/en.jpg";
 import Allemand from "../assets/images/languages/de.jpg";
 import Norvegien from "../assets/images/languages/no.jpg";
 import Italien from "../assets/images/languages/it.jpg";
+import Espagnol from "../assets/images/languages/it.jpg";
 import {useTranslation} from "react-i18next";
 
 
@@ -50,5 +51,13 @@ export const useLanguages = () : Language[] => {
             size_x: 270,
             plus_description: t('personal-learning-semester')
         },
+        {
+            language_name: t('spanish'),
+            description: t('A1-beginner'),
+            image: Espagnol,
+            size_y: 404,
+            size_x: 270,
+            plus_description: t('personal-learning-semester')
+        }
     ];
 }

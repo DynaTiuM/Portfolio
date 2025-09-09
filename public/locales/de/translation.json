@@ -32,6 +32,7 @@
   "autumn-2022": "Herbst 2022",
   "spring-2023": "Frühling 2023",
   "spring-2024": "Frühling 2024",
+  "autumn-2024:": "Herbst 2024",
   "more-information": "Mehr Informationen ▸",
 
   "i-am-passionate-about": "Ich bin begeistert von ",
@@ -72,6 +73,13 @@
   "pc40": "Paralleles Rechnen",
   "lg02": "Deutsch Niveau 2",
   "ei03": "Internationale Sicherheit und globale Herausforderungen",
+
+  "ai50": "",
+  "ai51": "",
+  "ai52": "",
+  "ai53": "",
+  "li00": "",
+  "hn01": "",
 
   "about-me-text-1": "Mein Name ist Raphaël PERRIN. Ich spezialisiere mich derzeit auf Informatik im vierten Jahr an der Universität für Technologie von Belfort-Montbéliard (UTBM).",
   "about-me-text-3": "Ich bin auch begeistert vom Anschauen von Filmen und Lesen von Büchern auf Deutsch, während ich Ausflüge mit Freunden und Begegnungen mit neuen Menschen genieße.",
@@ -116,7 +124,7 @@
   "coust_ut_description": "Club für Nähen und Häkeln an der UTBM.",
   "eventum_description": "Website im Rahmen eines Projekts der UTBM erstellt, um Studierende für Ausflüge, Abende und andere Veranstaltungen zu versammeln.",
 
-  "internship": "Praktikum",
+  "internships": "Praktikum",
   "axopen_info": "Ich hatte die Gelegenheit, bei Axopen im Rahmen meines Praktikums als Assistenten-Ingenieur während meines vierten Studienjahres zu arbeiten. Axopen ist ein Unternehmen, das sich auf Webentwicklung und Audits spezialisiert hat. Dieses Praktikum ermöglichte es mir, meine Fähigkeiten in der Webentwicklung zu erweitern und in einem professionellen Umfeld zu arbeiten, während ich in einem Team zusammenarbeitete.",
   "axopen_project_one": "Es handelte sich um ein Projekt zur Erstellung eines Programms, das SVG-Diagramme generiert, die die Architektur zwischen Anwendungen, Hosting-Diensten und deren Funktionsweise durch Prozesse oder Verbindungen darstellen. Dieses Projekt ermöglichte es mir, meine Kenntnisse in der C#-Programmiersprache sowie im .NET-Framework zu vertiefen. Außerdem konnte ich mich mit GitLab, einer auf Git basierenden Entwicklungs- und Hosting-Plattform, vertraut machen.",
   "axopen_project_two": "Dieses Projekt beinhaltete die Einrichtung eines Portals für einen Kunden, um die Überprüfung von EXCEL-Dateien, die von Ländervertretern gesendet wurden, zu erleichtern. Dieses Projekt ermöglichte es mir, meine Teamarbeit zu verbessern und mich besser mit Frameworks wie Laravel (dessen Programmiersprache PHP ist) im Backend und React im Frontend vertraut zu machen.",

@@ -12,7 +12,7 @@ import Results from "./pages/Results/Results";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Footer from "./pages/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
-import Internship from "./pages/Internship/Internship";
+import Internships from "./pages/Internships/Internships";
 
 function App() {
       return (
@@ -28,7 +28,7 @@ function App() {
                 <Blank marginTopValue={120} />
                 <div id="projects"><Projects /></div>
                 <Blank marginTopValue={120} />
-                <div><Internship /></div>
+                <div><Internships/></div>
                 <Blank marginTopValue={160} />
                 <div id="languages"><Languages /></div>
                 <Blank marginTopValue={120} />

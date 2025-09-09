@@ -8,6 +8,47 @@ export const useGpaInformation = (): GPAInformationProps[] => {
 
     return [
         {
+            gpa: useGPA(3),
+            uvs: [
+                {
+                    name: "AI50",
+                    description: t('ai50'),
+                    credits: 6,
+                    letter: "A"
+                },
+                {
+                    name: "AI51",
+                    description: t('ai51'),
+                    credits: 6,
+                    letter: "A"
+                },
+                {
+                    name: "AI52",
+                    description: t('ai52'),
+                    credits: 6,
+                    letter: "A"
+                },
+                {
+                    name: "AI53",
+                    description: t('ai53'),
+                    credits: 6,
+                    letter: "C"
+                },
+                {
+                    name: "LI00",
+                    description: t('li00'),
+                    credits: 4,
+                    letter: "A"
+                },
+                {
+                    name: "HN01",
+                    description: t('hn01'),
+                    credits: 5,
+                    letter: "A"
+                }
+            ]
+        },
+        {
             gpa: useGPA(2),
             uvs: [
                 {

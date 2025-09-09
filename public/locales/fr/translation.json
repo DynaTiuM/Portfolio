@@ -32,6 +32,7 @@
   "autumn-2022": "Automne 2022",
   "spring-2023": "Printemps 2023",
   "spring-2024": "Printemps 2024",
+  "autumn-2024": "Automne 2024",
   "more-information": "Plus d'informations ▸",
 
   "i-am-passionate-about": "Je suis passionné par l'",
@@ -72,6 +73,13 @@
   "pc40": "Calcul parallèle",
   "lg02": "Allemand niveau 2",
   "ei03": "Sécurité internationale et défis mondiaux",
+
+  "ai50": "Intelligence artificielle: projet complet sur 6 mois",
+  "ai51": "Systèmes multiagents et simulation",
+  "ai52": "Optimisation et recherche opérationnelle avancée",
+  "ai53": "Machine Learning par apprentissage",
+  "li00": "Italien débutant",
+  "hn01": "Techn'hom Time Machine : outils et méthodes",
 
   "about-me-text-1": "Je m'appelle Raphaël PERRIN. Je suis actuellement en spécialité informatique en 4eme année à l'Université de Technologie de Belfort-Montbéliard (UTBM).",
   "about-me-text-3": "Je suis également passionné par le visionnage de films et la lecture de livres en allemand, tout en appréciant les sorties entre amis et les rencontres avec de nouvelles personnes.",
@@ -117,7 +125,7 @@
   "coust_ut_description": "Club de couture, crochet de l'UTBM.",
   "eventum_description": "Site internet créé dans le cadre d'un projet de l'UTBM visant à rassembler les étudiants pour des sorties, soirées et autres événements.",
 
-  "internship": "Stage",
+  "internships": "Stage",
   "axopen_info": "J’ai eu l’opportunité de pouvoir travailler dans l’entreprise Axopen dans le cadre de mon stage d’assistant ingénieur lors de ma quatrième année d’études. Il s’agit d’une entreprise spécialisée dans le développement web et audits. Ce stage m’a permis de développer mes compétences dans le domaine du développement web et de m’immerger dans l’environnement professionnel tout en collaborant au sein d’une équipe.",
   "axopen_project_one": "Il s’agissait d’un projet destiné à mettre en place un programme permettant de générer des schémas SVG représentants l’architecture entre des applications, hébergements, services et en expliquer le fonctionnement à travers des processus ou liaisons. Ce projet m’a permis de développer mes compétences avec le langage de programmation C# ainsi que sur le framework .NET. Il m’a également permis de m’initier à GitLab, une plateforme de développement et d’hébergement basée sur Git.",
   "axopen_project_two": "Il s’agissait de la mise en place d’un portail à destination d’un client pour lui faciliter la vérification de fichiers EXCEL envoyés par des représentants de pays. Ce projet m’a permis de développer mes compétences en travail d’équipe, d’appréhender davantage aux frameworks comme Laravel (dont le langage de programmation est PHP) du côté du back-end ou React pour le front-end.",
