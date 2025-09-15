@@ -2,21 +2,82 @@
     background-size: auto;
     background-image: url('../../assets/images/backgrounds/points.svg');
     width: 100%;
-    min-height: 94vh;
-    position: relative;
+    min-height: 136vh;
     margin-top: -20px;
     z-index: -1;
 }
 
-@media (max-width: 1256px) {
+@media (max-width: 1756px) {
     .ProjectsBackground {
-        min-height: 1050px;
+        min-height: 1200px;
+    }
+    .TimelineContainer {
+        right: 6.7vw!important;
     }
 }
 
-@media (max-width: 828px) {
+
+@media (max-width: 1656px) {
     .ProjectsBackground {
-        min-height: 2030px;
+        min-height: 1150px;
+    }
+    .TimelineContainer {
+        right: 6.4vw!important;
+    }
+}
+
+@media (max-width: 1576px) {
+    .ProjectsBackground {
+        min-height: 1070px;
+    }
+    .Arrow {
+    height: clamp(255px, 1vw, 17.5vw)!important;
+    }
+
+    .TimelineContainer {
+        right: 4.8vw!important;
+    }
+}
+
+@media (max-width: 1271px) {
+    .ProjectsBackground {
+        min-height: 1750px;
+    }
+    .Arrow {
+        height: 584px!important;
+    }
+    .TimelineContainer {
+        right: 8vw!important;
+    }
+}
+
+@media (max-width: 1071px) {
+    .TimelineContainer {
+        right: 7vw!important;
+    }
+}
+
+@media (max-width: 960px) {
+    .TimelineContainer {
+        right: 2.2vw!important;
+    }
+}
+
+@media (max-width: 842px) {
+    .ProjectsBackground {
+        min-height: 3030px;
+    }
+    .Arrow {
+        height: 1250px!important;
+    }
+    .TimelineContainer {
+        right: 9vw!important;
+    }
+}
+
+@media (max-width: 580px) {
+    .TimelineContainer {
+        right: 2vw!important;
     }
 }
 
@@ -33,7 +94,7 @@
 }
 
 .PurpleBackground {
-    background-color: var(--purple);
+    background-color: var(--dark-purple);
     font-family: 'Nexa-Bold', sans-serif;
     color: var(--background-color);
     padding: 45px 0;
@@ -66,6 +127,7 @@
     min-width: 20vw;
     height: 20vw;
     min-height: 300px;
+    max-height: 370px;
     transition: transform 0.25s ease-in-out;
     overflow: hidden;
     cursor: pointer;
@@ -74,11 +136,9 @@
 .Project::before {
     content: '';
     position: absolute;
-    border-radius: 16px;
-    top: 0;
-    left: 1%;
-    width: 98%;
+    border-radius: 17px;
     height: 98%;
+    transform: translate(1%, 0); 
     background: rgba(0, 0, 0, 0);
     transition: background 0.25s ease-in-out;
     pointer-events: none;
@@ -90,7 +150,7 @@
     position: absolute;
     top: 49%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg);
     width: 55px;
     height: 55px;
     background-image: url('../../assets/images/plus.png');
@@ -101,8 +161,14 @@
     pointer-events: none;
 }
 
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(90deg); }
+}
+
 .Project:hover::after {
     opacity: 1;
+    animation: spin 0.4s ease-out;
 }
 .Project:hover::before {
     background: rgba(0, 0, 0, 0.4);
@@ -114,4 +180,41 @@
 
 .Project:not(:hover) {
     transform: scale(1);
+}
+
+
+.TimelineContainer {
+  position: absolute;
+  right: 7vw;
+}
+
+.Timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.Year {
+  font-size: 1.6rem;
+  font-weight: 1000;
+  color: var(--dark-purple);
+}
+
+.Arrow {
+  width: 4px;
+  height: 17.5vw;
+  background: var(--dark-purple);
+  position: relative;
+}
+
+.Arrow::after {
+  content: '';
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 16px solid var(--dark-purple);
 }

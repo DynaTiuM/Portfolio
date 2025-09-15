@@ -53,6 +53,9 @@
   --CPP: #4d579b;
   --CS: #348f75;
   --TS: #2f7fc1;
+  --Angular: #9b0d33;
+  --React: #2dbece;
+  --Blender: #d97625;
 }
 
 h1 {
@@ -71,7 +74,7 @@ h2 {
 }
 
 .Purple {
-  color: var(--purple);
+  color: var(--dark-purple);
 }
 
 @font-face {

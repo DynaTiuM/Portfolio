@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {PopOverProps} from "../../models/PopOver";
 import PopOver from "../PopOver/PopOver";
 import {handleHover, handleHoverExit} from "../../services/handleHover";
@@ -25,7 +25,15 @@ export default function ItemList({items}: ItemListProps) {
                             <img
                                 src={language.src}
                                 alt={language.name}
-                                style={{height: '6.1vw',minHeight: 55, width: 'auto', marginBottom: '10px', transition: 'transform 0.2s ease-in-out' }}
+                                style={
+                                    {
+                                        height: '5vw',
+                                        minHeight: 55,
+                                        width: 'auto',
+                                        marginBottom: '10px',
+                                        transition: 'transform 0.2s ease-in-out' 
+                                    }
+                                }
                                 onMouseOver={(e) => handleHover(e, language.name, setPopOver)}
                                 onMouseOut={(e) => handleHoverExit(e, setPopOver)}
                             />

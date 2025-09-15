@@ -36,7 +36,7 @@ export default function ProjectInformation({ index, setProjectInformation }: Pro
         return text.split('\n').map((line, index) => (
             <React.Fragment key={index}>
                 {line}
-                <br />
+                <br/>
             </React.Fragment>
         ));
     };

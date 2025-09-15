@@ -6,6 +6,7 @@ import Python from "../assets/images/programming-languages/python.png";
 import Javascript from "../assets/images/programming-languages/js.png";
 import Typescript from "../assets/images/programming-languages/ts.png";
 import PHP from "../assets/images/programming-languages/php.png";
+import Prolog from "../assets/images/programming-languages/prolog.png";
 import {ProgrammingLanguage} from "../models/ProgrammingLanguage";
 
 export const getProgrammingLanguages = (): ProgrammingLanguage[] => {
@@ -18,5 +19,6 @@ export const getProgrammingLanguages = (): ProgrammingLanguage[] => {
         { src: Javascript, name: 'Javascript' },
         { src: Typescript, name: 'Typescript' },
         { src: PHP, name: 'PHP' },
+        { src: Prolog, name: 'Prolog'}
     ];
 }

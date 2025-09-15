@@ -1,0 +1,41 @@
+.ButtonBase {
+    font-size: clamp(15px, 1.1vw, 19px);
+    border-radius: 10px;
+    min-width: 205px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: 0.3s ease-in-out;
+    padding: 23px;
+}
+
+.SeeMyProjects {
+    background-color: var(--dark-purple);
+    color: var(--background-color);
+    width: 14vw;
+    @extend .ButtonBase;
+}
+
+.AboutMe {
+    border: 1px var(--text-color) solid;
+    background-color: var(--background-color);
+    width: 12vw;
+    min-width: 155px;
+    @extend .ButtonBase;
+}
+
+.SeeMyProjects:hover {
+    border: 1px var(--dark-purple) solid;
+    background: var(--background-color);
+    color: var(--dark-purple);
+    scale: 1.05;
+}
+.AboutMe:hover {
+    border: 1px var(--dark-purple) solid;
+    color: var(--dark-purple);
+    scale: 1.05;
+}

@@ -26,6 +26,18 @@
     display: flex;
     justify-content: center;
 }
+
+.BentoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.BentoTitle {
+    font-weight: 1000;
+    color: var(--dark-purple);
+}
+
 .Line img, .Line3 img {
     max-width: 100%;
     height: auto;

@@ -17,7 +17,8 @@ export default function Home() {
                     <h1>{t('welcome-to')} <span className="Purple">{t('portfolio-min')}</span></h1>
                     <h2>{t('subtitle')}</h2>
                     <div className="ButtonContainer">
-                        <Button/>
+                        <Button section={"projects"} text={"see-my-projects"} className={"SeeMyProjects"} />
+                        <Button section={"aboutMe"} text={"about-me"} className={"AboutMe"} />
                     </div>
                 </div>
                 <img src={Image} alt="Raphaël PERRIN" className="ProfileImage"/>

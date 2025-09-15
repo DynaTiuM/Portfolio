@@ -18,6 +18,7 @@
     }
     .collapsed .Title {
         transform: rotate(-90deg) translateY(-167px) translateX(-140px);
+        margin-top: 20px;
         transform-origin: bottom;
         width: 400px;
     }
@@ -38,7 +39,7 @@
 
 .Title {
     font-family: 'Nexa-Bold', sans-serif;
-    color: var(--purple);
+    color: var(--dark-purple);
     font-size: clamp(19px, 1.5vw, 23px);
 }
 

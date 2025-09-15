@@ -32,7 +32,7 @@
 }
 
 .Tab:hover {
-    color: var(--purple);
+    color: var(--dark-purple);
     scale: 1.02;
 }
 

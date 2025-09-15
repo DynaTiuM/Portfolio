@@ -35,25 +35,26 @@ export default function OtherSkillsArray() {
         <div style={{
             display: 'grid',
             gridTemplateColumns: `repeat(${numColumns}, 1fr)`,
-            gap: '50px',
+            gap: '40px',
             justifyItems: 'center',
         }}>
-            {getOtherSkills().map((item, index) => (
-                <div key={index} style={{position:"relative"}}>
-                    <img
-                        key={index}
-                        src={item.src}
-                        alt={item.name}
-                        style={{height: '5.2vw',minHeight: 55, width: 'auto', transition: 'transform 0.2s ease-in-out'}}
-                        onMouseOver={(e) => handleHover(e, item.name, setPopOver)}
-                        onMouseOut={(e) => handleHoverExit(e, setPopOver)}
-                    />
-                    {popOver.visible && popOver.text === item.name && (
-                        <PopOver text={popOver.text}></PopOver>
-                    )}
-                </div>
-
-            ))}
+            {
+                getOtherSkills().map((item, index) => (
+                    <div key={index} style={{position:"relative"}}>
+                        <img
+                            key={index}
+                            src={item.src}
+                            alt={item.name}
+                            style={{height: '4vw',minHeight: 55, width: 'auto', transition: 'transform 0.2s ease-in-out'}}
+                            onMouseOver={(e) => handleHover(e, item.name, setPopOver)}
+                            onMouseOut={(e) => handleHoverExit(e, setPopOver)}
+                        />
+                        {popOver.visible && popOver.text === item.name && (
+                            <PopOver text={popOver.text}></PopOver>
+                        )}
+                    </div>
+                ))
+            }
         </div>
     );
 };

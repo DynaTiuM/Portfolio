@@ -10,6 +10,8 @@ import OpenGL from '../../../assets/images/bento/OpenGL.svg';
 export default function Bento() {
     return (
         <div className="Container">
+            <div className = "BentoContainer">
+            <p className="BentoTitle">Virtual Reality</p>
             <div className="Lines">
                 <div className="Line">
                     <img src={VR} alt="Virtual Reality" className="VR" />
@@ -23,6 +25,7 @@ export default function Bento() {
                     <img src={Pose} alt="Augmented Reality" className="Pose" />
                     <img src={OpenGL} alt="OpenGL" className="OpenGL" />
                 </div>
+            </div>
             </div>
         </div>
     );
