@@ -46,6 +46,8 @@
     height: auto;
 }
 
+
+
 @media (max-width: 768px) {
     .Flex1 {
         flex-direction: column-reverse;
@@ -53,6 +55,11 @@
     }
 
     .Flex2 {
+        align-items: center;
+    }
+
+    .TitleWidth {
+        width: 80%;
     }
 
     .ProfileImage {

@@ -8,8 +8,8 @@
 }
 
 @media (max-width: 1756px) {
-    .ProjectsBackground {
-        min-height: 1200px;
+     .ProjectsBackground {
+        min-height: 69vw;
     }
     .TimelineContainer {
         right: 6.7vw!important;
@@ -19,7 +19,7 @@
 
 @media (max-width: 1656px) {
     .ProjectsBackground {
-        min-height: 1150px;
+        min-height: 69vw;
     }
     .TimelineContainer {
         right: 6.4vw!important;
@@ -28,10 +28,7 @@
 
 @media (max-width: 1576px) {
     .ProjectsBackground {
-        min-height: 1070px;
-    }
-    .Arrow {
-    height: clamp(255px, 1vw, 17.5vw)!important;
+        min-height: 69vw;
     }
 
     .TimelineContainer {
@@ -41,45 +38,40 @@
 
 @media (max-width: 1271px) {
     .ProjectsBackground {
-        min-height: 1750px;
+        min-height: 890px;
     }
     .Arrow {
-        height: 584px!important;
+        height: 204px!important;
     }
     .TimelineContainer {
-        right: 8vw!important;
+        right: 3.3vw!important;
     }
 }
 
-@media (max-width: 1071px) {
-    .TimelineContainer {
-        right: 7vw!important;
-    }
-}
-
-@media (max-width: 960px) {
-    .TimelineContainer {
-        right: 2.2vw!important;
-    }
-}
-
-@media (max-width: 842px) {
+@media (max-width: 1070px) {
     .ProjectsBackground {
-        min-height: 3030px;
+        min-height: 1450px;
     }
     .Arrow {
-        height: 1250px!important;
+        visibility: hidden!important;
     }
-    .TimelineContainer {
-        right: 9vw!important;
+    .Year{
+        visibility: hidden!important;
     }
 }
 
-@media (max-width: 580px) {
-    .TimelineContainer {
-        right: 2vw!important;
+@media (max-width: 710px) {
+    .ProjectsBackground {
+        min-height: 2565px;
+    }
+    .Arrow {
+        visibility: hidden!important;
+    }
+    .Year{
+        visibility: hidden!important;
     }
 }
+
 
 .Projects {
     margin-top: 20px;
@@ -124,9 +116,8 @@
 .Project {
     position: relative;
     margin-bottom: 10px;
-    min-width: 20vw;
     height: 20vw;
-    min-height: 300px;
+    min-height: 250px;
     max-height: 370px;
     transition: transform 0.25s ease-in-out;
     overflow: hidden;
@@ -203,7 +194,7 @@
 
 .Arrow {
   width: 4px;
-  height: 17.5vw;
+  height: 17vw;
   background: var(--dark-purple);
   position: relative;
 }
