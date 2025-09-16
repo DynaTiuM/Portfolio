@@ -11,7 +11,7 @@ i18n
         fallbackLng: 'en',
         supportedLngs: ['en', 'fr', 'de'],
         backend: {
-            loadPath: '/locales/{{lng}}/{{ns}}.json',
+            loadPath: `${process.env.PUBLIC_URL}/locales/{{lng}}/{{ns}}.json`,
         },
         detection: {
             order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
