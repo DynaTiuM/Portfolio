@@ -3,10 +3,10 @@ import Sweat from "./Sweat/Sweat";
 import Stickers from "./Stickers/Stickers";
 import Chair from "./Chair/ChairConception";
 
-import './StickerSweatConception.css'
+import './Conception.css'
 import {useTranslation} from "react-i18next";
 
-export default function StickerSweatConception() {
+export default function Conception() {
 
     const { t } = useTranslation();
 

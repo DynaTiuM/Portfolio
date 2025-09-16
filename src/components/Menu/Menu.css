@@ -68,6 +68,25 @@
         z-index: 11;
     }
 }
+.MenuButton:hover {
+    transform: scale(1.05);
+    transition: 0.65s ease-in-out;
+}
+
+.MenuButton:not(hover) {
+    transform: scale(1.0);
+    transition: 0.65s ease-in-out;
+}
+
+.MenuImg {
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.MenuImg.open {
+    transform: scale(1.1);
+  opacity: 0.8;
+}
 
 @media (max-width: 480px) {
     .Menu {

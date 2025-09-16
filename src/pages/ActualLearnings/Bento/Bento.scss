@@ -13,6 +13,12 @@
     gap: 30px;
 }
 
+.Line2 {
+    @extend .Line;
+    margin-top: 4px;
+}
+
+
 .Line3 {
     display: flex;
     flex-direction: row;
@@ -25,6 +31,7 @@
 .Container {
     display: flex;
     justify-content: center;
+    gap: 8vw;
 }
 
 .BentoContainer {
@@ -41,6 +48,41 @@
 .Line img, .Line3 img {
     max-width: 100%;
     height: auto;
+}
+
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 30px;
+}
+
+
+.ColumnsAI {
+    display: flex;
+    gap: 30px;
+    margin-top: -15px;
+}
+
+.LinesAI {
+    display: flex;
+    flex-direction: column;
+}
+
+.LineAI {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    display: flex;
+}
+
+.Line2AI {
+    display: flex;
+    height: auto;
+    margin-top: 13px;
+    gap: 30px;
 }
 
 .VR {
@@ -67,7 +109,29 @@
     max-height: 191px;
 }
 
-@media (max-width: 1200px) {
+
+.RL {
+    width: 327.94px;
+}
+
+.OA {
+    width: 347px;
+}
+
+.MA {
+    max-height: 456px;
+}
+
+.UL {
+    max-height: 208px;
+}
+
+.SL {
+    max-height: 226px;
+}
+
+
+@media (max-width: 1600px) {
     .VR {
         max-height: 200px;
     }
@@ -87,12 +151,53 @@
         max-height: 163px;
     }
 
+    .RL {
+        width: 279.86px;
+    }
+
+    .OA {
+        width: 296.13px;
+    }
+
+    .MA {
+        max-height: 389.15px;
+    }
+
+    .UL {
+        max-height: 177.51px;
+    }
+
+    .SL {
+        max-height: 192.86px;
+    }
+
     .Line {
         gap: 26px;
+    }
+    .Line2 {
+        margin-top: 3px;
     }
     .Line3 {
         margin-top: 26px;
         gap: 26px;
+    }
+
+    .Line2AI {
+        gap: 26px;
+    }
+    .Column {
+        gap: 26px;
+    }
+    .ColumnsAI {
+        gap: 26px;
+    }
+}
+
+@media (max-width: 1300px) {
+    
+    .Container {
+        flex-direction: column;
+        gap: 40px;
     }
 }
 
@@ -116,11 +221,43 @@
         max-height: 142px;
     }
 
+    .RL {
+        width: 243.81px;
+    }
+
+    .OA {
+        width: 257.97px;
+    }
+
+    .MA {
+        max-height: 339px;
+    }
+
+    .UL {
+        max-height: 154.63px;
+    }
+
+    .SL {
+        max-height: 168px;
+    }
+
     .Line {
         gap: 22px;
     }
+    .Line2 {
+        margin-top: 3px;
+    }
     .Line3 {
         margin-top: 22px;
+        gap: 22px;
+    }
+    .Line2AI {
+        gap: 22px;
+    }
+    .Column {
+        gap: 22px;
+    }
+    .ColumnsAI {
         gap: 22px;
     }
 }
@@ -145,11 +282,45 @@
         max-height: 122px;
     }
 
+    .RL {
+        width: 209.47px;
+    }
+
+    .OA {
+        width: 221.64px;
+    }
+
+    .MA {
+        max-height: 291.27px;
+    }
+
+    .UL {
+        max-height: 132.85px;
+    }
+
+    .SL {
+        max-height: 144.35px;
+    }
+
+
     .Line {
         gap: 19px;
     }
+    .Line2 {
+        margin-top: 3px;
+    }
     .Line3 {
         margin-top: 19px;
+        gap: 19px;
+    }
+
+    .Line2AI {
+        gap: 19px;
+    }
+    .Column {
+        gap: 19px;
+    }
+    .ColumnsAI {
         gap: 19px;
     }
 }
@@ -175,11 +346,45 @@
         max-height: 94px;
     }
 
+    .RL {
+        width: 161.39px;
+    }
+
+    .OA {
+        width: 170.77px;
+    }
+
+    .MA {
+        max-height: 224.41px;
+    }
+
+    .UL {
+        max-height: 102.36px;
+    }
+
+    .SL {
+        max-height: 111.22;
+    }
+
     .Line {
         gap: 15px;
+    }
+    .Line2 {
+        margin-top: 2px;
     }
     .Line3 {
         margin-top: 15px;
         gap: 15px;
     }
+
+    .Line2AI {
+        gap: 15px;
+    }
+    .Column {
+        gap: 15px;
+    }
+    .ColumnsAI {
+        gap: 15px;
+    }
 }
+
