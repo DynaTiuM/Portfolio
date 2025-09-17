@@ -8,6 +8,7 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+        lng: 'en',
         fallbackLng: 'en',
         supportedLngs: ['en', 'fr', 'de'],
         backend: {
@@ -21,5 +22,6 @@ i18n
             useSuspense: false,
         },
     });
+
 
 export default i18n;
