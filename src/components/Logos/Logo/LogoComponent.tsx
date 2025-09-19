@@ -1,7 +1,7 @@
 import {Logo} from "../../../models/Logo";
 
 import './LogoComponent.css';
-import React, {useState} from "react";
+import {useState} from "react";
 import {PopOverProps} from "../../../models/PopOver";
 import {handleHover, handleHoverExit} from "../../../services/handleHover";
 import PopOver from "../../PopOver/PopOver";
@@ -18,7 +18,7 @@ export default function LogoComponent(logo: Logo) {
         />
         {popOver.visible && popOver.text === `${logo.name} : ${logo.description}` && (
             <PopOver text={popOver.text}
-                     min_width={"200px"}
+                     min_width={"190px"}
                      max_width={"300px"}
                      top={"35%"} />
         )}
