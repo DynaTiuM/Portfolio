@@ -132,6 +132,9 @@
 
   "portfolio-introduction": "This portfolio is designed to showcase my projects, skills, and background as a computer engineer.",
   "portfolio-description": "The creation of this portfolio, which you are currently viewing, allowed me to put into practice my knowledge of web development, focusing on design and usability. I used Figma to design a pleasant and tailored user interface. The development is based on React, whose robust structure (built on services and reusable components) enables me to efficiently update and evolve this portfolio over time.",
+  
+  "fracture-introduction": "Fracture is an interactive Discord application where multiple players coordinate their actions around a crystal. The goal is to earn points by absorbing the crystal's power while preventing it from breaking, which would make all participants lose their session points. The game emphasizes strategic choices inspired by the prisoner's dilemma: cooperate to maximize collective gains, or try to get an advantage over others at the risk of losing everything.",
+  "fracture-description": "The project is built on a full-stack architecture with a Node.js backend using Express and Mongoose to interact with MongoDB, enabling management of players, bonuses, and sessions. The frontend is developed in React with TailwindCSS. The application uses sockets to synchronize players' actions in real time. The system follows a robust architecture with reusable services, facilitating maintenance and long-term evolution of the application.",
 
   "technologies": "Technologies",
   "project-realization": "Project realization",
