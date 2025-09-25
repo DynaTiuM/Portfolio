@@ -50,12 +50,16 @@
   --PHP: #9238b0;
   --JS: #f5d01d;
   --CSS: #b03878;
+  --TailwindCSS: #b03878;
   --CPP: #4d579b;
   --CS: #348f75;
   --TS: #2f7fc1;
   --Angular: #9b0d33;
   --React: #2dbece;
   --Blender: #d97625;
+  --MongoDB: #0e6b40;
+  --Express: #9ec23a;
+  --Mongoose: #daa700;
 }
 
 h1 {

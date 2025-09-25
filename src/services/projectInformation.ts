@@ -10,6 +10,8 @@ import Unity from '../assets/images/projects/big/unity_big.png';
 import Portfolio from '../assets/images/projects/big/portfolio_big.png';
 import Blender from '../assets/images/projects/big/blender_big.png';
 import Patrolling from '../assets/images/projects/big/patrolling_big.png';
+import Fracture from '../assets/images/projects/big/fracture_big.png';
+
 import {useTranslation} from "react-i18next";
 
 export const useProjectInformation = (index: number): ProjectInformation | null => {
@@ -97,6 +99,15 @@ export const useProjectInformation = (index: number): ProjectInformation | null 
                 "Python"
             ],
             big_image: Patrolling
+        },
+        {
+            project: getProject(9),
+            introduction: t('fracture-introduction'),
+            description: t('fracture-description'),
+            languages: [
+                "TS", "React", "MongoDB", "Mongoose"
+            ],
+            big_image: Fracture
         },
     ];
 

@@ -21,15 +21,6 @@ export default function Projects() {
         <>
             <Subtitle subtitle={t('projects')} />
             <div className="ProjectsContainer">
-                <div className="TimelineContainer">
-                    <div className="Timeline">
-                        <div className="Year">2025</div>
-                        <div className="Arrow"></div>
-                        <div className="Year">2023</div>
-                        <div className="Arrow"></div>
-                        <div className="Year">2022</div>
-                    </div>
-                </div>
                 <div className="Projects">
                     <div className={"ProjectContainer"}>
                         {getProjects().map((project, index) => (

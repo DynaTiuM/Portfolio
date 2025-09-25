@@ -2,43 +2,46 @@
     background-size: auto;
     background-image: url('../../assets/images/backgrounds/points.svg');
     width: 100%;
-    min-height: 136vh;
+    min-height: 1250px;
     margin-top: -20px;
     z-index: -1;
 }
+@media (max-width: 2073px) {
+    .ProjectsBackground {
+        min-height: 1650px;
+    }
+}
 
-@media (max-width: 1756px) {
-     .ProjectsBackground {
-        min-height: 69vw;
+@media (max-width: 1850px) {
+    .ProjectsBackground {
+        min-height: 91vw;
+    }
+    .Arrow {
+        height: 204px!important;
     }
     .TimelineContainer {
-        right: 6.7vw!important;
+        right: 3.3vw!important;
     }
 }
 
 
-@media (max-width: 1656px) {
+@media (max-width: 1400px) {
     .ProjectsBackground {
-        min-height: 69vw;
+        min-height: 1280px;
+    }
+    .Arrow {
+        height: 204px!important;
     }
     .TimelineContainer {
-        right: 6.4vw!important;
+        right: 3.3vw!important;
     }
 }
 
-@media (max-width: 1576px) {
-    .ProjectsBackground {
-        min-height: 69vw;
-    }
 
-    .TimelineContainer {
-        right: 4.8vw!important;
-    }
-}
 
-@media (max-width: 1271px) {
+@media (max-width: 1195px) {
     .ProjectsBackground {
-        min-height: 890px;
+        min-height: 1590px;
     }
     .Arrow {
         height: 204px!important;
@@ -50,7 +53,7 @@
 
 @media (max-width: 1070px) {
     .ProjectsBackground {
-        min-height: 1450px;
+        min-height: 1590px;
     }
     .Arrow {
         visibility: hidden!important;
@@ -60,9 +63,9 @@
     }
 }
 
-@media (max-width: 710px) {
+@media (max-width: 794px) {
     .ProjectsBackground {
-        min-height: 2565px;
+        min-height: 3145px;
     }
     .Arrow {
         visibility: hidden!important;
@@ -117,7 +120,7 @@
     position: relative;
     margin-bottom: 10px;
     height: 20vw;
-    min-height: 250px;
+    min-height: 280px;
     max-height: 370px;
     transition: transform 0.25s ease-in-out;
     overflow: hidden;
