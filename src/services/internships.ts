@@ -10,23 +10,6 @@ export const getInternships = () : Internship[] => {
     return [
         {
             id: 0,
-            image: Axopen,
-            period: 'axopen-period',
-            info: 'axopen-info',
-            background_symbol: X,
-            internProjects: [
-                {
-                    title: 'axopen-project-one-title',
-                    description: 'axopen-project-one'
-                },
-                 {
-                    title: 'axopen-project-two-title',
-                    description: 'axopen-project-two'
-                }
-            ]
-        },
-        {
-            id: 1,
             image: Bosch,
             period: 'bosch-period',
             info: 'bosch-info',
@@ -39,6 +22,23 @@ export const getInternships = () : Internship[] => {
                  {
                     title: 'bosch-project-two-title',
                     description: 'bosch-project-two'
+                }
+            ]
+        },
+        {
+            id: 1,
+            image: Axopen,
+            period: 'axopen-period',
+            info: 'axopen-info',
+            background_symbol: X,
+            internProjects: [
+                {
+                    title: 'axopen-project-one-title',
+                    description: 'axopen-project-one'
+                },
+                 {
+                    title: 'axopen-project-two-title',
+                    description: 'axopen-project-two'
                 }
             ]
         }

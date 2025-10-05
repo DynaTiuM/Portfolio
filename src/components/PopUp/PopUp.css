@@ -8,13 +8,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.InformationOverlay {
+    padding-inline: clamp(0.4rem, 3vw, 5rem);
+}
+
+@media (min-width: 1000px) {
+    .InformationOverlay {
+        padding-inline: clamp(2rem, 13vw, 15rem);
+    }
 }
 
 .InformationContainer {
     background-color: var(--popup-background);
-    width: 80%;
-    min-height: 80%;
+    width: 100%;
+    padding-top: 0px;
+    min-height: auto;
     overflow: hidden;
     backdrop-filter: blur(40px);
     border-radius: 25px 25px 0 25px;
