@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ca9b749.css",
-    "main.js": "/static/js/main.bc4ab6a2.js",
+    "main.css": "/static/css/main.0fcf1fb8.css",
+    "main.js": "/static/js/main.6c504c50.js",
     "static/js/453.5d79306b.chunk.js": "/static/js/453.5d79306b.chunk.js",
     "static/media/sweat.jpg": "/static/media/sweat.912c7564c003ba887601.jpg",
     "static/media/Pose.svg": "/static/media/Pose.4f8785b686ad03d834dbf9fc88452b9e.svg",
@@ -42,6 +42,7 @@
     "static/media/patrolling_big.png": "/static/media/patrolling_big.5096955f1eb87d69adaa.png",
     "static/media/bosch.png": "/static/media/bosch.114135316427009ca302.png",
     "static/media/Nexa Bold.otf": "/static/media/Nexa Bold.2fd02eff7af09b701ccc.otf",
+    "static/media/vocaboost_big.png": "/static/media/vocaboost_big.a22966e10f936bdb032e.png",
     "static/media/twitturtle_big.png": "/static/media/twitturtle_big.16303f895a4cc29f0b8d.png",
     "static/media/Nexa Light.otf": "/static/media/Nexa Light.86b788701658798867a9.otf",
     "static/media/prolog.png": "/static/media/prolog.a784d78904428ed4f92a.png",
@@ -53,6 +54,7 @@
     "static/media/ludiq.png": "/static/media/ludiq.ff1756ea21c7e859e58f.png",
     "static/media/graphviz.png": "/static/media/graphviz.b1773b6e80851afae700.png",
     "static/media/csharp.png": "/static/media/csharp.f089e215291596c8b583.png",
+    "static/media/vocaboost.png": "/static/media/vocaboost.a4786d6ece91de55e96b.png",
     "static/media/patrolling.png": "/static/media/patrolling.d6d704da86beb2a93eb3.png",
     "static/media/twitturtle.png": "/static/media/twitturtle.3f4a1affcd1d7d869f64.png",
     "static/media/cypress.png": "/static/media/cypress.c78ebecc0817cb87e618.png",
@@ -86,12 +88,12 @@
     "index.html": "/index.html",
     "static/media/line.svg": "/static/media/line.fea918b12c5102e67c9f.svg",
     "static/media/getFetch.cjs": "/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
-    "main.4ca9b749.css.map": "/static/css/main.4ca9b749.css.map",
-    "main.bc4ab6a2.js.map": "/static/js/main.bc4ab6a2.js.map",
+    "main.0fcf1fb8.css.map": "/static/css/main.0fcf1fb8.css.map",
+    "main.6c504c50.js.map": "/static/js/main.6c504c50.js.map",
     "453.5d79306b.chunk.js.map": "/static/js/453.5d79306b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ca9b749.css",
-    "static/js/main.bc4ab6a2.js"
+    "static/css/main.0fcf1fb8.css",
+    "static/js/main.6c504c50.js"
   ]
 }
