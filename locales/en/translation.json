@@ -152,16 +152,17 @@
 
   "internships": "Internships",
   "axopen-info": "I had the opportunity to work at Axopen as part of my assistant engineer internship during my fourth year of studies. Axopen is a company specialized in web development and audits. This internships allowed me to develop my skills in web development and immerse myself in a professional environment while collaborating within a team.",
-  "axopen-project-one": "This was a project aimed at creating a program that generates SVG diagrams representing the architecture between applications, hosting services, and explains their operation through processes or connections. This project allowed me to develop my skills in C# programming language as well as the .NET framework. It also introduced me to GitLab, a development and hosting platform based on Git.",
-  "axopen-project-two": "This project involved setting up a portal for a client to facilitate the verification of EXCEL files sent by country representatives. This project allowed me to improve my teamwork skills and gain more experience with frameworks such as Laravel (which uses PHP as the programming language) for back-end development and React for front-end development.",
+  "axopen-project-one": "This project involved setting up a portal for a client to facilitate the verification of EXCEL files sent by country representatives. This project allowed me to improve my teamwork skills and gain more experience with frameworks such as Laravel (which uses PHP as programming language) for back-end development and React for front-end development.",
+  "axopen-project-two": "This was a project aimed at creating a program that generates SVG diagrams representing the architecture between applications, hosting services, and explains their operation through processes or connections. This project allowed me to develop my skills in C# programming language as well as the .NET framework. It also introduced me to GitLab, a development and hosting platform based on Git.",
   "axopen-period": "September 2023 - February 2024",
-  "axopen-project-one-title": "First Project - IT Schematics",
-  "axopen-project-two-title": "Second Project - HR Portal",
-
+  "axopen-project-one-title": "First Project - HR Portal",
+  "axopen-project-two-title": "Second Project - IT Schematics",
+  
   "bosch-info": "I had the great opportunity to work at Bosch, a global leader in technology and engineering, where I participated in the development and automation of applications for the department. This experience allowed me to strengthen my skills in international communication, work effectively in a team, and collaborate across different departments, while applying and deepening my technical knowledge in a professional context.",
-  "bosch-project-one": "During this project, I automated the renaming of files on SharePoint using Power Automate, in order to follow a precise convention and ensure effective tracking of departmental files through a list serving as a database. I also developed a user interface with Power Apps to facilitate targeted file searches. Finally, I designed and distributed an internal newsletter, allowing each department member to contribute and easily share relevant content.",
-  "bosch-project-two": "I developed a CRON job to automatically transfer files every night from an SMB fileshare to a dedicated SharePoint, making the data accessible to an external application, which was also the application where I performed End-to-End (E2E) tests with Cypress. These tests ensured that the application continued to function correctly after the addition of new features. The automation required simulating a user login, which led me to understand and use OAuth2 to interact properly with the application.",
+  "bosch-project-one": "I developed a CRON job to automatically transfer files every night from an SMB fileshare to a dedicated SharePoint, making the data accessible to an external application, which was also the application where I performed End-to-End (E2E) tests with Cypress. These tests ensured that the application continued to function correctly after the addition of new features. The automation required simulating a user login, which led me to understand and use OAuth2 to interact properly with the application.",
+  "bosch-project-two": "During this project, I automated the renaming of files on SharePoint using Power Automate, in order to follow a precise convention and ensure effective tracking of departmental files through a list serving as a database. I also developed a user interface with Power Apps to facilitate targeted file searches. Finally, I designed and distributed an internal newsletter, allowing each department member to contribute and easily share relevant content.",
   "bosch-period": "February 2025 - July 2025",
-  "bosch-project-one-title": "First Project - SharePoint Automation and Optimization",
-  "bosch-project-two-title": "Second Project - File Transfer Automation and E2E Testing"
+
+  "bosch-project-one-title": "First Project - File Transfer Automation and E2E Testing",
+  "bosch-project-two-title": "Second Project - SharePoint Automation and Optimization"
 }
