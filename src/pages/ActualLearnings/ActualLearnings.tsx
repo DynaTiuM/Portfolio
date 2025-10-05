@@ -1,4 +1,3 @@
-import Title from "../../components/Title/Title";
 import Subtitle from "../../components/Subtitle/Subtitle";
 import './ActualLearnings.css'
 import Bento from "./Bento/Bento";
@@ -10,7 +9,6 @@ export default function ActualLearnings() {
 
     return <div style = {{backgroundColor: "var(--background-color)"}}>
         <div className={"Titles"}>
-            <Title title={t('portfolio')} />
             <Subtitle subtitle={t('actual-learnings')} />
         </div>
 
