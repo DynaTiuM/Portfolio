@@ -11,6 +11,7 @@ import Portfolio from '../assets/images/projects/big/portfolio_big.png';
 import Blender from '../assets/images/projects/big/blender_big.png';
 import Patrolling from '../assets/images/projects/big/patrolling_big.png';
 import Fracture from '../assets/images/projects/big/fracture_big.png';
+import Vocaboost from '../assets/images/projects/big/vocaboost_big.png';
 
 import {useTranslation} from "react-i18next";
 
@@ -108,6 +109,15 @@ export const useProjectInformation = (index: number): ProjectInformation | null 
                 "TS", "React", "MongoDB", "Mongoose"
             ],
             big_image: Fracture
+        },
+        {
+            project: getProject(10),
+            introduction: t('vocaboost-introduction'),
+            description: t('vocaboost-description'),
+            languages: [
+                "Java", "Kotlin", "Spring-Boot", "Compose"
+            ],
+            big_image: Vocaboost
         },
     ];
 

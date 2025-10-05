@@ -16,12 +16,6 @@
     .ProjectsBackground {
         min-height: 91vw;
     }
-    .Arrow {
-        height: 204px!important;
-    }
-    .TimelineContainer {
-        right: 3.3vw!important;
-    }
 }
 
 
@@ -29,49 +23,25 @@
     .ProjectsBackground {
         min-height: 1280px;
     }
-    .Arrow {
-        height: 204px!important;
-    }
-    .TimelineContainer {
-        right: 3.3vw!important;
-    }
 }
 
 
 
-@media (max-width: 1195px) {
+@media (max-width: 1191px) {
     .ProjectsBackground {
-        min-height: 1590px;
+        min-height: 1900px;
     }
     .Arrow {
         height: 204px!important;
     }
     .TimelineContainer {
         right: 3.3vw!important;
-    }
-}
-
-@media (max-width: 1070px) {
-    .ProjectsBackground {
-        min-height: 1590px;
-    }
-    .Arrow {
-        visibility: hidden!important;
-    }
-    .Year{
-        visibility: hidden!important;
     }
 }
 
 @media (max-width: 794px) {
     .ProjectsBackground {
-        min-height: 3145px;
-    }
-    .Arrow {
-        visibility: hidden!important;
-    }
-    .Year{
-        visibility: hidden!important;
+        min-height: 3445px;
     }
 }
 

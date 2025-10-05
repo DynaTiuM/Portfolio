@@ -8,6 +8,7 @@ import Portfolio from '../assets/images/projects/portfolio.png';
 import Blender from '../assets/images/projects/blender.png';
 import Patrolling from '../assets/images/projects/patrolling.png';
 import Fracture from '../assets/images/projects/fracture.png';
+import Vocaboost from '../assets/images/projects/vocaboost.png';
 import {Project} from "../models/Project";
 
 const projects: Project[] = [
@@ -20,7 +21,8 @@ const projects: Project[] = [
     {id: 6, src: Portfolio, name: "Portfolio"},
     {id: 7, src: Blender, name: "Blender Scene"},
     {id: 8, src: Patrolling, name: "Patrolling System"},
-    {id: 9, src: Fracture, name: "Fracture: Discord App"}
+    {id: 9, src: Fracture, name: "Fracture: Discord App"},
+    {id: 10, src: Vocaboost, name: "Vocaboost"},
 ]
 
 export const getProjects = (): Project[] => {
