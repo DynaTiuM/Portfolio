@@ -28,7 +28,7 @@
 
 .Gradient {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--background-color) 50%);
-    height: 300px;
+    height: 330px;
     position: absolute;
     left: 0;
     width: 100%;
@@ -36,6 +36,8 @@
 }
 
 .ButtonContainer {
+    display: flex;
+    gap: 20px;
     margin-top: 3px;
 }
 
@@ -44,6 +46,8 @@
     height: auto;
 }
 
+
+
 @media (max-width: 768px) {
     .Flex1 {
         flex-direction: column-reverse;
@@ -51,6 +55,11 @@
     }
 
     .Flex2 {
+        align-items: center;
+    }
+
+    .TitleWidth {
+        width: 80%;
     }
 
     .ProfileImage {

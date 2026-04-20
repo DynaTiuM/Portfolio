@@ -14,12 +14,12 @@
 @media (min-width: 1401px) {
     .InternProjectContainer.collapsed {
         width: 30px;
-        height: 420px;
+        height: 460px;
     }
     .collapsed .Title {
-        transform: rotate(-90deg) translateY(-167px) translateX(-140px);
-        transform-origin: bottom;
-        width: 400px;
+        transform: rotate(-90deg) translateY(-215px) translateX(-170px);
+
+        width: 460px;
     }
 }
 @media (max-width: 1400px) {
@@ -30,16 +30,23 @@
     .InternProjectContainer.expanded {
         width: calc(25% + (1400px - 80vw) * 0.2);
     }
+    .Title {
+        transition: transform 0.3s ease;
+    }
+    .collapsed .Title {
+       transform: translateY(-15px);
+    }
 }
 
 .InternProjectContainer.expanded {
-    height: 420px;
+    height: 460px;
 }
 
 .Title {
     font-family: 'Nexa-Bold', sans-serif;
-    color: var(--purple);
+    color: var(--dark-purple);
     font-size: clamp(19px, 1.5vw, 23px);
+    
 }
 
 .collapsed .Title {

@@ -1,8 +1,8 @@
-.AxopenImg {
+.CompanyImg {
     width: clamp(200px, 20vw, 600px);
 }
 
-.InternshipContainer {
+.internshipContainer {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -12,7 +12,7 @@
     flex-wrap: nowrap;
 }
 @media (max-width: 1400px) {
-    .InternshipContainer {
+    .internshipContainer {
         flex-direction: column;
         align-items: center;
     }
@@ -23,23 +23,21 @@
         width: 80%!important;
     }
 
-    .AxopenX {
-        position: relative;
-        width: 100%;
-        transform: scale(1);
+    .InternshipLogo {
+        right: 15%!important;
     }
 
-    .AxopenText {
+    .InternshipText {
         max-width: 800px!important;
     }
 }
 
-.AxopenX {
+.InternshipLogo {
     position: absolute;
-    top: -20%;
-    right: 30%;
-    width: 30%;
-    min-width: 300px;
+    top: 10%;
+    right: 6%;
+    width: 10%;
+    min-width: 170px;
     height: auto;
     z-index: -1;
     object-fit: cover;

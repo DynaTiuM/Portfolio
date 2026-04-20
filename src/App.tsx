@@ -12,23 +12,23 @@ import Results from "./pages/Results/Results";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import Footer from "./pages/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
-import Internship from "./pages/Internship/Internship";
+import Internships from "./pages/Internships/Internships";
 
 function App() {
       return (
           <div className="App">
                 <Menu />
                 <div id="home"><Home /></div>
-                <Blank marginTopValue={200} />
-                <div id="actualLearnings"><ActualLearnings /></div>
-                <Blank marginTopValue={120} />
+                <Blank marginTopValue={180} />
                 <div id="skills"><Skills /></div>
                 <Blank marginTopValue={120} />
                 <div id="otherSkills"><OtherSkills /></div>
                 <Blank marginTopValue={120} />
                 <div id="projects"><Projects /></div>
                 <Blank marginTopValue={120} />
-                <div><Internship /></div>
+                <div><Internships/></div>
+                <Blank marginTopValue={140} />
+                <div id="actualLearnings"><ActualLearnings /></div>
                 <Blank marginTopValue={160} />
                 <div id="languages"><Languages /></div>
                 <Blank marginTopValue={120} />

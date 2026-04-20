@@ -16,12 +16,7 @@ export default function Languages() {
                 {useLanguages().map((card, index) => (
                     <Card
                         key={index}
-                        language_name={card.language_name}
-                        description={card.description}
-                        image={card.image}
-                        size_y={card.size_y}
-                        size_x={card.size_x}
-                        plus_description={card.plus_description}
+                        {...card}
                     />
                 ))}
             </div>

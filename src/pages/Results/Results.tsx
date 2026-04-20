@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import Subtitle from "../../components/Subtitle/Subtitle";
 import './Results.css';
 import GPA from "../../components/GPA/GPABar/GPA";
@@ -20,13 +20,15 @@ export default function Results() {
                     <Subtitle subtitle={t('half-year-results')} />
                 </div>
                 <div className="GPAList">
+                    <div>GPA (Grade Point Average)</div>
                     {useGPAS().map((gpa: GPAProps, index: number) => (
                         <GPA key={index} date={gpa.date} value={gpa.value} index={gpa.index} />
                     ))}
+                    <div className={"GPAButtonContainer"}>
+                        <GPAButton text={t('more-information')} setGpaInformation={setGpaInformation} />
+                    </div>
                 </div>
-                <div className={"GPAButtonContainer"}>
-                    <GPAButton text={t('more-information')} setGpaInformation={setGpaInformation} />
-                </div>
+                
                 <div className="PlusBackground"></div>
             </div>
             {

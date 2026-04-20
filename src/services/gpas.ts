@@ -8,6 +8,7 @@ export const useGPAS = (): GPAProps[] => {
         { date: t('autumn-2022'), value: 80, index: 0 },
         { date: t('spring-2023'), value: 88, index: 1 },
         { date: t('spring-2024'), value: 84, index: 2 },
+        { date: t('autumn-2024'), value: 92, index: 3 }
     ];
 }
 

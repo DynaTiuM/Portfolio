@@ -1,0 +1,390 @@
+.Lines {
+    margin-top: -15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Line {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.Line2 {
+    @extend .Line;
+    margin-top: 4px;
+}
+
+
+.Line3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.Container {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.BentoContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.BentoTitle {
+    font-weight: 1000;
+    color: var(--dark-purple);
+}
+
+.Line img, .Line3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.Column {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    gap: 30px;
+}
+
+
+.ColumnsAI {
+    display: flex;
+    gap: 30px;
+    margin-top: -15px;
+}
+
+.LinesAI {
+    display: flex;
+    flex-direction: column;
+}
+
+.LineAI {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    display: flex;
+}
+
+.Line2AI {
+    display: flex;
+    height: auto;
+    margin-top: 13px;
+    gap: 30px;
+}
+
+.VR {
+    max-height: 235px;
+}
+
+.UI {
+    max-height: 224px;
+}
+
+.Blender {
+    max-height: 191px;
+}
+
+.Engines {
+    max-height: 217px;
+}
+
+.Pose {
+    max-height: 191px;
+}
+
+.OpenGL {
+    max-height: 191px;
+}
+
+
+.RL {
+    width: 327.94px;
+}
+
+.OA {
+    width: 347px;
+}
+
+.MA {
+    max-height: 456px;
+}
+
+.UL {
+    max-height: 208px;
+}
+
+.SL {
+    max-height: 226px;
+}
+
+
+@media (max-width: 1600px) {
+    .VR {
+        max-height: 200px;
+    }
+    .UI {
+        max-height: 191px;
+    }
+    .Blender {
+        max-height: 163px;
+    }
+    .Engines {
+        max-height: 185px;
+    }
+    .Pose {
+        max-height: 163px;
+    }
+    .OpenGL {
+        max-height: 163px;
+    }
+
+    .RL {
+        width: 279.86px;
+    }
+
+    .OA {
+        width: 296.13px;
+    }
+
+    .MA {
+        max-height: 389.15px;
+    }
+
+    .UL {
+        max-height: 177.51px;
+    }
+
+    .SL {
+        max-height: 192.86px;
+    }
+
+    .Line {
+        gap: 26px;
+    }
+    .Line2 {
+        margin-top: 3px;
+    }
+    .Line3 {
+        margin-top: 26px;
+        gap: 26px;
+    }
+
+    .Line2AI {
+        gap: 26px;
+    }
+    .Column {
+        gap: 26px;
+    }
+    .ColumnsAI {
+        gap: 26px;
+    }
+}
+
+@media (max-width: 1300px) {
+    
+    .Container {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .VR {
+        max-height: 175px;
+    }
+    .UI {
+        max-height: 167px;
+    }
+    .Blender {
+        max-height: 142px;
+    }
+    .Engines {
+        max-height: 162px;
+    }
+    .Pose {
+        max-height: 142px;
+    }
+    .OpenGL {
+        max-height: 142px;
+    }
+
+    .RL {
+        width: 243.81px;
+    }
+
+    .OA {
+        width: 257.97px;
+    }
+
+    .MA {
+        max-height: 339px;
+    }
+
+    .UL {
+        max-height: 154.63px;
+    }
+
+    .SL {
+        max-height: 168px;
+    }
+
+    .Line {
+        gap: 22px;
+    }
+    .Line2 {
+        margin-top: 3px;
+    }
+    .Line3 {
+        margin-top: 22px;
+        gap: 22px;
+    }
+    .Line2AI {
+        gap: 22px;
+    }
+    .Column {
+        gap: 22px;
+    }
+    .ColumnsAI {
+        gap: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .VR {
+        max-height: 150px;
+    }
+    .UI {
+        max-height: 143px;
+    }
+    .Blender {
+        max-height: 122px;
+    }
+    .Engines {
+        max-height: 139px;
+    }
+    .Pose {
+        max-height: 122px;
+    }
+    .OpenGL {
+        max-height: 122px;
+    }
+
+    .RL {
+        width: 209.47px;
+    }
+
+    .OA {
+        width: 221.64px;
+    }
+
+    .MA {
+        max-height: 291.27px;
+    }
+
+    .UL {
+        max-height: 132.85px;
+    }
+
+    .SL {
+        max-height: 144.35px;
+    }
+
+
+    .Line {
+        gap: 19px;
+    }
+    .Line2 {
+        margin-top: 3px;
+    }
+    .Line3 {
+        margin-top: 19px;
+        gap: 19px;
+    }
+
+    .Line2AI {
+        gap: 19px;
+    }
+    .Column {
+        gap: 19px;
+    }
+    .ColumnsAI {
+        gap: 19px;
+    }
+}
+
+
+@media (max-width: 455px) {
+    .VR {
+        max-height: 115px;
+    }
+    .UI {
+        max-height: 110px;
+    }
+    .Blender {
+        max-height: 94px;
+    }
+    .Engines {
+        max-height: 107px;
+    }
+    .Pose {
+        max-height: 94px;
+    }
+    .OpenGL {
+        max-height: 94px;
+    }
+
+    .RL {
+        width: 161.39px;
+    }
+
+    .OA {
+        width: 170.77px;
+    }
+
+    .MA {
+        max-height: 224.41px;
+    }
+
+    .UL {
+        max-height: 102.36px;
+    }
+
+    .SL {
+        max-height: 111.22px;
+    }
+
+    .Line {
+        gap: 15px;
+    }
+    .Line2 {
+        margin-top: 2px;
+    }
+    .Line3 {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .Line2AI {
+        gap: 15px;
+    }
+    .Column {
+        gap: 15px;
+    }
+    .ColumnsAI {
+        gap: 15px;
+    }
+}
+

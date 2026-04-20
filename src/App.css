@@ -46,13 +46,23 @@
   --a-letter: #71BB44;
 
   --Java: #b03838;
+  --Kotlin: #138dff;
+  --Spring-Boot: #6db33f;
+  --Compose: #7f52ad;
   --Python: #3dabab;
   --PHP: #9238b0;
   --JS: #f5d01d;
   --CSS: #b03878;
+  --TailwindCSS: #b03878;
   --CPP: #4d579b;
   --CS: #348f75;
   --TS: #2f7fc1;
+  --Angular: #9b0d33;
+  --React: #2dbece;
+  --Blender: #d97625;
+  --MongoDB: #0e6b40;
+  --Express: #9ec23a;
+  --Mongoose: #daa700;
 }
 
 h1 {
@@ -70,8 +80,9 @@ h2 {
   text-align: left;
 }
 
+
 .Purple {
-  color: var(--purple);
+  color: var(--dark-purple);
 }
 
 @font-face {
