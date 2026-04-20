@@ -1,4 +1,3 @@
-import React from 'react';
 import ItemList from "../ItemList/ItemList";
 import {getProgrammingLanguages} from "../../services/programmingLanguages";
 

@@ -2,8 +2,12 @@ import Subtitle from "../../components/Subtitle/Subtitle";
 import './OtherSkills.css'
 import OtherSkillsArray from "../../components/ItemArray/OtherSkillsArray";
 import {useTranslation} from "react-i18next";
+import { useEffect } from "react";
 
 export default function OtherSkills() {
+    useEffect(() => {
+        window.dispatchEvent(new Event("resize"));
+    }, []);
 
     const { t } = useTranslation();
 

@@ -1,5 +1,6 @@
 .LogoComponent {
-    max-width: 200px;
+    max-width: 180px;
+    width: 33vw;
 }
 
 .LogoComponent:hover {

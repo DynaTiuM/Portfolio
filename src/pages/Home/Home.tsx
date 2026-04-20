@@ -14,10 +14,11 @@ export default function Home() {
             <Blank marginTopValue={200}/>
             <div className="Flex1">
                 <div className="Flex2">
-                    <h1>{t('welcome-to')} <span className="Purple">{t('portfolio-min')}</span></h1>
-                    <h2>{t('subtitle')}</h2>
+                    <h1 className='TitleWidth'>{t('welcome-to')} <span className="Purple">{t('portfolio-min')}</span></h1>
+                    <h2 className='TitleWidth'>{t('subtitle')}</h2>
                     <div className="ButtonContainer">
-                        <Button/>
+                        <Button section={"projects"} text={"see-my-projects"} className={"SeeMyProjects"} />
+                        <Button section={"aboutMe"} text={"about-me"} className={"AboutMe"} />
                     </div>
                 </div>
                 <img src={Image} alt="Raphaël PERRIN" className="ProfileImage"/>

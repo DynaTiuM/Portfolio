@@ -1,10 +1,10 @@
 import {Language} from "../models/Language";
-import Francais from "../assets/images/languages/fr.jpg";
-import Anglais from "../assets/images/languages/en.jpg";
-import Allemand from "../assets/images/languages/de.jpg";
-import Norvegien from "../assets/images/languages/no.jpg";
-import Italien from "../assets/images/languages/it.jpg";
-import Espagnol from "../assets/images/languages/it.jpg";
+import French from "../assets/images/languages/fr.jpg";
+import English from "../assets/images/languages/en.jpg";
+import German from "../assets/images/languages/de.jpg";
+import Norwegian from "../assets/images/languages/no.jpg";
+import Italian from "../assets/images/languages/it.jpg";
+import Spanish from "../assets/images/languages/es.jpg";
 import {useTranslation} from "react-i18next";
 
 
@@ -15,30 +15,30 @@ export const useLanguages = () : Language[] => {
         {
             language_name: t('french'),
             description: t('mother-tongue'),
-            image: Francais,
+            image: French,
             size_y: 370,
             size_x: 270
         },
         {
             language_name: t('english'),
-            description: t('B2-skill'),
-            image: Anglais,
+            description: t('C1-skill'),
+            image: English,
             size_y: 402,
             size_x: 270,
             plus_description: t('linguaskill')
         },
         {
             language_name: t('german'),
-            description: t('B1-skill'),
-            image: Allemand,
+            description: t('B2-skill'),
+            image: German,
             size_y: 451,
             size_x: 270,
             plus_description: t('goethe')
         },
         {
             language_name: t('norwegian'),
-            description: t('A1-beginner'),
-            image: Norvegien,
+            description: t('A2-skill'),
+            image: Norwegian,
             size_y: 381,
             size_x: 270,
             plus_description: t('personal-learning')
@@ -46,7 +46,7 @@ export const useLanguages = () : Language[] => {
         {
             language_name: t('italian'),
             description: t('A1-beginner'),
-            image: Italien,
+            image: Italian,
             size_y: 404,
             size_x: 270,
             plus_description: t('personal-learning-semester')
@@ -54,10 +54,10 @@ export const useLanguages = () : Language[] => {
         {
             language_name: t('spanish'),
             description: t('A1-beginner'),
-            image: Espagnol,
-            size_y: 404,
+            image: Spanish,
+            size_y: 360,
             size_x: 270,
-            plus_description: t('personal-learning-semester')
+            plus_description: t('personal-learning')
         }
     ];
 }

@@ -15,7 +15,7 @@ export default function Logos() {
         <div className={"FlexRow"}>
             <div className={"LogoContainer"}>
                 {useLogos().map((logo, index) => (
-                    <Logo src={logo.src} name={logo.name} description={logo.description} key={index} />
+                    <Logo key={index} {...logo} />
                 ))}
             </div>
         </div>

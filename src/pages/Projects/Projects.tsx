@@ -35,7 +35,7 @@ export default function Projects() {
                                     className={"ProjectImg"}
                                 />
                             </div>
-                        ))}
+                        )).reverse()}
                     </div>
                 </div>
             </div>

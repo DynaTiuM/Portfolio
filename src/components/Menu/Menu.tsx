@@ -1,7 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import './Menu.css';
 import { scrollToSection } from "../../services/scroll";
-import MenuIcon from '../../assets/images/menu.png';
+import MenuIconOpened from '../../assets/images/menu1.png';
+import MenuIconClosed from '../../assets/images/menu2.png';
 
 import { useTranslation } from 'react-i18next';
 import DropDown from "../DropDown/DropDown";
@@ -53,7 +54,7 @@ export default function Menu() {
     return (
         <div className={`Menu ${isMenuOpen ? '' : 'retracted'}`}>
             <button className="MenuButton" onClick={toggleMenu}>
-                <img className = "MenuImg" src={MenuIcon} alt="Menu" width="30px" />
+                <img className={`MenuImg ${isMenuOpen ? "open" : ""}`} src={isMenuOpen ? MenuIconOpened : MenuIconClosed} alt="Menu" width="30px" />
             </button>
             {(isMenuOpen || width > 768) &&  (
                 <>

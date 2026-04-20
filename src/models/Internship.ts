@@ -2,8 +2,9 @@ import {InternProject} from "./InternProject";
 
 export interface Internship {
     id: number;
-    name: string;
+    image: string;
     period: string;
     info: string;
-    internProject: InternProject;
+    background_symbol: string;
+    internProjects: InternProject[];
 }

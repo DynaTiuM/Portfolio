@@ -3,7 +3,7 @@ import Title from "../../components/Title/Title";
 import './AboutMe.css'
 import Blank from "../../components/Blank/Blank";
 import LogoConception from "../LogoConception/LogoConception";
-import StickerSweatConception from "../StickerSweatConception/StickerSweatConception";
+import Conception from "../Conception/Conception";
 import {useTranslation} from "react-i18next";
 
 export default function AboutMe() {
@@ -23,6 +23,6 @@ export default function AboutMe() {
         <Blank marginTopValue={60} />
         <LogoConception />
         <Blank marginTopValue={140} />
-        <StickerSweatConception />
+        <Conception />
     </div>
 }

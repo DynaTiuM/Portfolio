@@ -1,11 +1,10 @@
-import React from 'react';
 import ItemList from "../ItemList/ItemList";
 import {getFrameworks} from "../../services/frameworks";
 
-const ProgrammingLanguages = () => {
+const Frameworks = () => {
     return (
         <ItemList items={getFrameworks()} />
     );
 };
 
-export default ProgrammingLanguages;
+export default Frameworks;

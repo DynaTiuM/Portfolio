@@ -13,6 +13,8 @@ import Office from "../assets/images/other-skills/office.png";
 import Latex from "../assets/images/other-skills/latex.png";
 import VegasPro from "../assets/images/other-skills/vegas.png";
 import AffinityDesigner from '../assets/images/other-skills/affinity-designer.png';
+import Docker from '../assets/images/other-skills/docker.png';
+import MongoDB from '../assets/images/other-skills/mongodb.png';
 
 import {OtherSkill} from "../models/OtherSkill";
 
@@ -21,16 +23,19 @@ export const getOtherSkills = (): OtherSkill[] => {
         { src: MySQL, name: 'MySQL' },
         { src: CSS, name: 'CSS' },
         { src: HTML, name: 'HTML' },
-        { src: Graphviz, name: 'Graphviz' },
-        { src: AI, name: 'Adobe Illustrator' },
-        { src: Figma, name: 'Figma' },
         { src: Github, name: 'Github' },
         { src: Gitlab, name: 'Gitlab' },
+        { src: Docker, name: 'Docker' },
+        { src: MongoDB, name: 'MongoDB' },
         { src: Unity, name: 'Unity' },
         { src: UE, name: 'Unreal Engine' },
+        { src: Graphviz, name: 'Graphviz' },
+        { src: Latex, name: 'Latex' },
         { src: Blender, name: 'Blender' },
         { src: Office, name: 'Office' },
-        { src: Latex, name: 'Latex' },
+        { src: Figma, name: 'Figma' },
+        { src: AI, name: 'Adobe Illustrator' },
+        { src: AffinityDesigner, name: 'Affinity Designer' },
         { src: VegasPro, name: 'VEGAS Pro' }
     ]
 }

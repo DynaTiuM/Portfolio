@@ -1,14 +1,20 @@
-import './Button.css'
+import './Button.scss'
 import {scrollToSection} from "../../../services/scroll";
 import {useTranslation} from "react-i18next";
 
-export default function Button() {
+
+interface ButtonProps {
+    section: string;
+    className: string;
+    text: string
+}
+
+export default function Button({section, className, text}: ButtonProps) {
 
     const { t } = useTranslation();
 
-
     const onClick = () => {
-        scrollToSection("projects", -150);
+        scrollToSection(section, -150);
     }
-    return <div className={"Button"} onClick={onClick}><p>{t('see-my-projects')}</p></div>
+    return <div className={className} onClick={onClick}><p>{t(text)}</p></div>
 }
