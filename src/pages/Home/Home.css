@@ -1,83 +1,155 @@
-.Flex1 {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5vw;
+.HomeWrapper {
     width: 100%;
 }
 
-.Flex2 {
+.HomeContainer {
+    padding: 0 5vw;
+    max-width: 1600px;
+    margin: 0 auto;
+
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
 }
 
-.Background {
-    background-size: cover;
-    background-image: url('../../assets/images/backgrounds/points.svg');
-    width: 100%;
-    height: calc(123vh - 10vw);
-    max-height: 123vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-
-
-.Gradient {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--background-color) 50%);
-    height: 330px;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.ButtonContainer {
+.ChapterI {
     display: flex;
-    gap: 20px;
-    margin-top: 3px;
+    text-transform: uppercase;
+    color: var(--taupe);
+    text-align: start;
+    font-size: 0.6rem;
+    gap: 1.2rem;
+    align-items: center;
+    letter-spacing: 0.22em;
+    margin-bottom: 3.5rem;
 }
 
-.ProfileImage {
-    max-width: 20%;
+.ChapterI::after {
+    content: '';
+    display: inline-block;
+    width: 2.5rem;
+    height: 1px;
+    background: var(--taupe);
+    opacity: 0.4;
+}
+
+.Home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.HomeContent {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.TextBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.ImageBlock {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ImageBlock img {
+    width: clamp(260px, 25vw, 300px);
     height: auto;
+    transform: rotate(1.8deg);
 }
 
+.Names {
+    line-height: 0.92;
+    margin-bottom: 2.5rem;
+    margin-top:0;
+}
 
+.Name {
+    font-family: var(--PFD-black);
+    color: var(--ink);
+    letter-spacing: -0.025em;
+}
 
-@media (max-width: 768px) {
-    .Flex1 {
+.Surname {
+    font-family: var(--PFD-black-italic);
+    color: var(--carmine);
+    
+    letter-spacing: -0.025em;
+}
+
+.Subtitle {
+    margin-top: 10px;
+    max-width: 500px;
+    font-family: var(--Spectral-italic);
+    color: var(--taupe);
+    line-height: 1.65;
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.Subtitle::first-letter {
+  float: left;
+  font-size: 4.2em;
+  color: var(--carmine);
+  line-height: 0.78;
+  font-family: var(--Spectral-bold);
+  margin-right: 0.1em;
+}
+
+.Divider {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 clamp(1.5rem, 5vw, 5rem);
+    margin: 14rem 0 2rem;
+}
+.Divider::after, .Divider::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--taupe);
+    opacity: 0.25;
+}
+
+.DividerSymbol {
+    font-family: var(--PFD);
+    font-size: 1.1rem;
+    color: var(--taupe);
+    opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+
+    .HomeContent {
         flex-direction: column-reverse;
         align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
 
-    .Flex2 {
+    .TextBlock {
         align-items: center;
+        max-width: 500px;
+        min-width: 0;
+    }
+    
+    .Subtitle {
+        max-width: 370px;
     }
 
-    .TitleWidth {
-        width: 80%;
-    }
-
-    .ProfileImage {
-        max-width: 40%;
-        min-width: 200px;
-    }
-
-    .ButtonContainer {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    h1 {
-        text-align: center;
-    }
-    h2 {
-        width: 100%;
-        text-align: center;
+    .ImageBlock img {
+        width: clamp(220px, 60vw, 300px);
     }
 }

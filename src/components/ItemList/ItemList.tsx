@@ -21,25 +21,23 @@ export default function ItemList({items}: ItemListProps) {
             <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', gap: '57px', flexWrap: 'wrap', width: '80%' }}>
                 {
                     items.map((language, index) => (
-                        <div key={index} style={{ position: 'relative', display: 'inline-block' }}>
-                            <img
-                                src={language.src}
-                                alt={language.name}
-                                style={
-                                    {
-                                        height: '5vw',
-                                        minHeight: 55,
-                                        width: 'auto',
-                                        marginBottom: '10px',
-                                        transition: 'transform 0.2s ease-in-out' 
-                                    }
-                                }
-                                onMouseOver={(e) => handleHover(e, language.name, setPopOver)}
-                                onMouseOut={(e) => handleHoverExit(e, setPopOver)}
-                            />
-                            {popOver.visible && popOver.text === language.name && (
-                                <PopOver text={popOver.text}></PopOver>
-                            )}
+                        <div className="Category">
+                            <h4 className="CategoryTitle">Langages de programmation</h4>
+                            <div className="CategoryItem">
+                                <span className="ItemName">JavaScript</span>
+                                <span className="ItemDots"></span>
+                                <span className="ItemImage">O</span>
+                            </div>
+                            <div className="CategoryItem">
+                                <span className="ItemName">JavaScript</span>
+                                <span className="ItemDots"></span>
+                                <span className="ItemImage">O</span>
+                            </div>
+                            <div className="CategoryItem">
+                                <span className="ItemName">JavaScript</span>
+                                <span className="ItemDots"></span>
+                                <span className="ItemImage">O</span>
+                            </div>
                         </div>
                     ))
                 }

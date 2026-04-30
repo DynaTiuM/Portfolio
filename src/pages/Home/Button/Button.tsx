@@ -16,5 +16,5 @@ export default function Button({section, className, text}: ButtonProps) {
     const onClick = () => {
         scrollToSection(section, -150);
     }
-    return <div className={className} onClick={onClick}><p>{t(text)}</p></div>
+    return <div className={className} onClick={onClick}><p className="ButtonText">{t(text)}</p><span className="ButtonArrow">→</span></div>
 }

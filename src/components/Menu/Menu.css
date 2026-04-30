@@ -1,22 +1,23 @@
 .Menu {
     background-color: var(--background-color);
     color: var(--text-color);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     display: flex;
-    gap: 65px;
+    gap: 50px;
     position: fixed;
     top: 0;
     z-index: 10;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
-    justify-content: center;
+    padding: 18px 20px;
+    justify-content: flex-end;
     align-items: center;
-    padding: 4px 0;
-
-    transition: height 0.3s ease-in-out;
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--optaupe);
 }
 
 .Menu.retracted {
-    height: 60px;
+    height: 75px;
     overflow: hidden;
 }
 
@@ -26,14 +27,12 @@
 
 
 .Tab {
-    margin-top: 22px;
     cursor: pointer;
     transition: color 0.2s ease-in-out, scale 0.2s ease-in-out;
 }
 
 .Tab:hover {
-    color: var(--dark-purple);
-    scale: 1.02;
+    color: var(--ink);
 }
 
 .Tab:not(:hover) {
@@ -45,16 +44,10 @@
         flex-direction: column;
         gap: 20px;
         padding: 20px 0;
-        height: auto;
     }
-    .Menu.retracted {
-        height: 30px;
-    }
+
     .Tab {
         margin-top: 10px;
-    }
-    .Tab:hover {
-        scale: 1.05;
     }
     .MenuButton {
         display: flex;
@@ -69,23 +62,23 @@
     }
 }
 .MenuButton:hover {
-    transform: scale(1.05);
-    transition: 0.65s ease-in-out;
+    transform: scale(1.03);
+    transition: 0.175s ease-in-out;
 }
 
 .MenuButton:not(hover) {
     transform: scale(1.0);
-    transition: 0.65s ease-in-out;
+    transition: 0.175s ease-in-out;
 }
 
 .MenuImg {
   cursor: pointer;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.175s ease, opacity 0.175s ease;
 }
 
 .MenuImg.open {
-    transform: scale(1.1);
-  opacity: 0.8;
+    transform: scale(1.03);
+    opacity: 0.8;
 }
 
 @media (max-width: 480px) {

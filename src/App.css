@@ -1,11 +1,5 @@
-.App {
-  text-align: center;
-  font-size: clamp(16px, 1.5vw, 20px);
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 18px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,26 +8,24 @@
   }
 }
 
-.App-header {
-  background-color: var(--background-color);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
 :root {
-  --background-color: rgb(255, 255, 255);
-  --text-color: rgb(0, 0, 0);
-  --purple: #AE47FF;
-  --gray-background: #FAF9FA;
+  --cream: #F5F0E8;
+  --cream-dark: #EDE7D8;
+  --ink: #1A1410;
+  --carmine: #C8373A;
+  --taupe: #7A7060;
+  --optaupe: rgba(122,112,96,0.12);
+  --dark: #1E1B16;
+  --dark-warm: #2A2520;
+  --midnight: #2C4A6B;
+
+  --background-color: var(--cream);
+  --text-color: var(--taupe);
+  
   --green: #97D075;
   --light-green: #E4E9E1;
   --dark-purple: #562DB5;
@@ -63,47 +55,80 @@
   --MongoDB: #0e6b40;
   --Express: #9ec23a;
   --Mongoose: #daa700;
+
+  --Mono: 'DMMono', sans-serif;
+  --PFD-black: 'PlayfairDisplay-Black', sans-serif;
+  --PFD-black-italic: 'PlayfairDisplay-BlackItalic', sans-serif;
+  --PFD-bold: 'PlayfairDisplay-Bold', sans-serif;
+  --PFD-bold-italic: 'PlayfairDisplay-BoldItalic', sans-serif;
+  --PFD: 'PlayfairDisplay-Regular', sans-serif;
+  --PFD-italic: 'PlayfairDisplay-Italic', sans-serif;
+  --Spectral-italic: 'Spectral-Italic', sans-serif;
+  --Spectral-bold: 'Spectral-Bold', sans-serif;
+
+  --chapter-w: 3rem;
+  --mg-outer: clamp(1.5rem, 5vw, 5rem);
+  --mg-chapter: calc(var(--mg-outer) + var(--chapter-w) + 2rem);
 }
 
 h1 {
-  font-size: clamp(23px, 4.42vw, 60px);
-  width: 500px;
+  font-size: clamp(3.2rem, 8.5vw, 7.5rem);
   text-align: left;
   margin-bottom: 0;
-  font-family: 'Nexa-Bold', sans-serif;
 }
 
 h2 {
   margin-top: 0;
-  font-size: clamp(14px, 1.43vw, 26px);
-  width: 370px;
+  font-size: clamp(0.95rem, 1.4vw, 1.15rem);
   text-align: left;
 }
 
-
 .Purple {
-  color: var(--dark-purple);
+  color: var(--carmine);
 }
 
 @font-face {
-  font-family: 'Nexa';
-  src: url('fonts/Nexa Regular.otf') format('truetype');
+  font-family: 'DMMono';
+  src: url('fonts/DMMono-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Nexa-Bold';
-  src: url('fonts/Nexa Bold.otf') format('truetype');
+  font-family: 'PlayfairDisplay-Black';
+  src: url('fonts/PlayfairDisplay-Black.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Nexa-Light';
-  src: url('fonts/Nexa Light.otf') format('truetype');
+  font-family: 'PlayfairDisplay-BlackItalic';
+  src: url('fonts/PlayfairDisplay-BlackItalic.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'Nexa-Heavy';
-  src: url('fonts/Nexa Heavy.ttf') format('truetype');
+  font-family: 'PlayfairDisplay-Bold';
+  src: url('fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay-BoldItalic';
+  src: url('fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src: url('fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PlayfairDisplay-Italic';
+  src: url('fonts/PlayfairDisplay-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spectral-Italic';
+  src: url('fonts/Spectral-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spectral-Bold';
+  src: url('fonts/Spectral-Bold.ttf') format('truetype');
 }
 
 body {
-  font-family: 'Nexa', sans-serif;
+  font-family: var(--Mono);
+  background-color: var(--background-color);
+  
+  font-size: 0.6rem;
 }
 
 .FlexColumn {

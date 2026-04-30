@@ -19,7 +19,6 @@ function App() {
           <div className="App">
                 <Menu />
                 <div id="home"><Home /></div>
-                <Blank marginTopValue={180} />
                 <div id="skills"><Skills /></div>
                 <Blank marginTopValue={120} />
                 <div id="otherSkills"><OtherSkills /></div>

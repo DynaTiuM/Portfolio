@@ -1,6 +1,80 @@
-h3 {
-    font-size: clamp(28px, 4vw, 46px);
-    color: var(--dark-purple);
-    font-family: 'Nexa-Heavy', sans-serif;
+.SectionTitleContainer {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    padding: 6rem 5vw 7rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.SideIndicator {
+    width: var(--chapter-w);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.RomanNumber {
+    font-family: var(--PFD-italic);
+    font-weight: 400;
+    color: var(--taupe);
+    opacity: 0.45;
+    font-size: 0.75rem;
+}
+
+.VerticalLine {
+    width: 1px;
+    flex-grow: 1;
+    background: var(--taupe);
+    opacity: 0.2;
+}
+
+.SideText {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--taupe);
+    opacity: 0.5;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+
+.MainTitleContent {
+    flex: 1;
+    padding-top: 5px; 
+}
+
+.MainTitleContent h3 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: var(--cream);
+    text-align: left;
+    font-family: var(--PFD);
+    line-height: 1.1;
     margin: 0;
+    margin-bottom: 90px;
+}
+
+.MainTitleContent h3 .Highlight {
+    color: var(--carmine);
+    font-family: var(--PFD-italic);
+}
+
+.SectionTitleContainer.dark .MainTitleContent h3 {
+    color: var(--cream);
+}
+
+.SectionTitleContainer.light .MainTitleContent h3 {
+    color: var(--ink);
+}
+
+.SectionTitleContainer.dark .SideText, .SectionTitleContainer.dark .RomanNumber {
+    color: rgba(245,240,232,0.35);
+    opacity: 1;
+}
+.SectionTitleContainer.dark .VerticalLine {
+    background-color: rgba(245,240,232,0.12);
+    opacity: 1;
 }

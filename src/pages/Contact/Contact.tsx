@@ -1,6 +1,5 @@
 import LinkedIn from '../../assets/images/contact/linkedin.png';
 import EMail from '../../assets/images/contact/email.png';
-import Title from "../../components/Title/Title";
 
 import './Contact.css'
 import Architect from "../../assets/images/backgrounds/architect.svg";
@@ -14,7 +13,7 @@ export default function Contact() {
         <img className={"Architect"} src={Architect} alt={""}/>
         <div className={"ContactGrayBackground"}>
             <div className={"ContactContainer"}>
-                <Title title={t('contact')}/>
+                
                 <p>{t('contact-me')}</p>
                 <div className={"FlexRow"}>
                     <div className={"ContactFlex"}>
